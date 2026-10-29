@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+# local database is recreated and seeded automatically on startup
+data/*.db
+data/*.db-journal
+.streamlit/secrets.toml
+.env

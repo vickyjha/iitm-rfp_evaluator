@@ -1,0 +1,14 @@
+streamlit>=1.55
+altair>=5.4
+langgraph>=0.6
+langchain-core>=0.3
+langsmith>=0.4
+openai>=1.99
+pydantic>=2.7
+pymupdf>=1.26
+python-docx>=1.1
+olefile>=0.47
+pandas>=2.2
+# only needed to regenerate the sample proposals (scripts/generate_samples.py)
+reportlab>=4.2
+pillow>=10.0

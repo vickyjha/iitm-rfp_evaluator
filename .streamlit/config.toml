@@ -1,0 +1,31 @@
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = false
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F5F7F6"
+secondaryBackgroundColor = "#E9EFED"
+textColor = "#17282D"
+linkColor = "#0F766E"
+borderColor = "#D6DFDC"
+showWidgetBorder = true
+baseRadius = "0.45rem"
+baseFontSize = 15
+font = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"]
+
+[theme.sidebar]
+backgroundColor = "#12303A"
+secondaryBackgroundColor = "#1B4250"
+textColor = "#DCE8EA"
+primaryColor = "#5ED0C0"
+borderColor = "#24505D"
+
+[server]
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false

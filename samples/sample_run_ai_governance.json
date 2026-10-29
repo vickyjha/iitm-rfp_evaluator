@@ -1,0 +1,1000 @@
+{
+  "rfp_run_id": "RFP-20261028-135330-9352F2",
+  "rfp_title": "Enterprise AI Governance and Model Risk Platform",
+  "rfp_reference": "MFS-RFP-2026-031",
+  "category": {
+    "category_id": 1,
+    "code": "TECH_AI_GOV",
+    "label": "Technology \u2013 AI Governance",
+    "note": ""
+  },
+  "created_at": "2026-10-28T13:53:30+00:00",
+  "completed_at": "2026-10-28T13:53:30+00:00",
+  "status": "completed",
+  "created_by": "evaluator",
+  "llm": {
+    "mode": "mock",
+    "model": "mock-evaluator",
+    "prompt_version": "v2.0",
+    "temperature": 0
+  },
+  "disclaimer": "Mock mode: scores were produced by the offline simulator for demonstration, not by an AI model. Do not use them for real decisions.",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 1,
+      "name": "Governance & Policy Coverage",
+      "description": "Model inventory, approval workflows, policy library, roles and accountability, alignment to frameworks such as NIST AI RMF and ISO/IEC 42001.",
+      "weight": 25.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 2,
+      "name": "Model Risk & Monitoring",
+      "description": "Bias/fairness testing, drift and performance monitoring, explainability tooling, incident management and alerting.",
+      "weight": 25.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 3,
+      "name": "Regulatory Compliance & Audit",
+      "description": "Support for the EU AI Act, DPDP Act and sector regulators; audit trails, evidence packs and certifications.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 4,
+      "name": "Integration & Deployment",
+      "description": "Integration with ML platforms and data stack, deployment options (SaaS/on-prem), implementation plan and timeline.",
+      "weight": 15.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 5,
+      "name": "Commercials & Support",
+      "description": "Pricing transparency, total cost of ownership, support model, SLAs and relevant references.",
+      "weight": 15.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_weighted_score": "sum over criteria of (score / max_score) x weight",
+    "criterion_benchmark": "highest validated score for the criterion across all ranked suppliers",
+    "criterion_gap": "supplier score - benchmark score (0 for the benchmark leader, otherwise negative)",
+    "relative_performance_pct": "(supplier score / benchmark score) x 100; 100 when the benchmark is 0",
+    "peer_performance_index": "sum(relative_pct x weight) / sum(weights)",
+    "rounding": "absolute score and PPI rounded to 4 decimals before sorting"
+  },
+  "tie_break_order": [
+    "1) Higher Peer Performance Index (PPI) first",
+    "2) Earlier submission date",
+    "3) Higher historical experience rating",
+    "4) Supplier name in ascending (A-Z) order"
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "ClearMind Assurance",
+      "absolute_score": 78.5,
+      "ppi": 88.6806,
+      "submission_date": "2026-10-27",
+      "experience_rating": 82.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "TrustGrid Systems",
+      "absolute_score": 77.5,
+      "ppi": 87.7778,
+      "submission_date": "2026-10-28",
+      "experience_rating": 70.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Lumora AI",
+      "absolute_score": 72.0,
+      "ppi": 81.6667,
+      "submission_date": "2026-10-25",
+      "experience_rating": 64.0
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Kavach Labs",
+      "absolute_score": 58.0,
+      "ppi": 65.6944,
+      "submission_date": "2026-10-24",
+      "experience_rating": 30.0
+    }
+  ],
+  "benchmarks": [
+    {
+      "criterion_id": 1,
+      "criterion_name": "Governance & Policy Coverage",
+      "weight": 25.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "ClearMind Assurance"
+      ]
+    },
+    {
+      "criterion_id": 2,
+      "criterion_name": "Model Risk & Monitoring",
+      "weight": 25.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Lumora AI"
+      ]
+    },
+    {
+      "criterion_id": 3,
+      "criterion_name": "Regulatory Compliance & Audit",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "ClearMind Assurance"
+      ]
+    },
+    {
+      "criterion_id": 4,
+      "criterion_name": "Integration & Deployment",
+      "weight": 15.0,
+      "max_score": 10,
+      "benchmark_score": 8.0,
+      "leaders": [
+        "Lumora AI",
+        "TrustGrid Systems"
+      ]
+    },
+    {
+      "criterion_id": 5,
+      "criterion_name": "Commercials & Support",
+      "weight": 15.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Kavach Labs"
+      ]
+    }
+  ],
+  "tie_break_explanations": [
+    {
+      "higher": "ClearMind Assurance",
+      "lower": "TrustGrid Systems",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "ClearMind Assurance ranks above TrustGrid Systems: higher PPI (88.6806 vs 87.7778)."
+    },
+    {
+      "higher": "TrustGrid Systems",
+      "lower": "Lumora AI",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "TrustGrid Systems ranks above Lumora AI: higher PPI (87.7778 vs 81.6667)."
+    },
+    {
+      "higher": "Lumora AI",
+      "lower": "Kavach Labs",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "Lumora AI ranks above Kavach Labs: higher PPI (81.6667 vs 65.6944)."
+    }
+  ],
+  "suppliers": [
+    {
+      "final_rank": 1,
+      "supplier_name": "ClearMind Assurance",
+      "file_name": "clearmind_assurance.pdf",
+      "submission_date": "2026-10-27",
+      "experience_rating": 82.0,
+      "absolute_score": 78.5,
+      "ppi": 88.6806,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Governance & Policy Coverage",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Complete inventory, risk tiering and approval workflows with a policy library mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act.",
+          "evidence": "Pre-built policy library mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act, with 180 configurable controls.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Governance and Policy Framework",
+            "start": 926,
+            "end": 1037,
+            "context_before": "\u2026 register, a consistent risk tiering method, and audit-ready evidence for the RBI, the DPDP Act and the EU\nAI Act for its European subsidiary.\n2. Governance and Policy Framework\n\u2022 Central AI inventory covering ML models, vendor AI and generative AI use cases, with owners and lineage.\n\u2022 ",
+            "match_text": "Pre-built policy library mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act, with 180 configurable\ncontrols",
+            "context_after": ".\n\u2022 Risk tiering questionnaire with automatic routing to model risk, legal, privacy and the AI ethics committee.\n\u2022 Approval workflows with maker-checker sign-off and time-bound exceptions.\nClearMind is itself certified to ISO/IEC 42001:2023 (AI management system) and ISO/IEC 27001:2022.\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.9,
+          "weighted_points": 22.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Model Risk & Monitoring",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Covers drift, performance decay, fairness and GenAI hallucination and prompt-injection testing, linked to incidents.",
+          "evidence": "Generative AI use cases are evaluated for hallucination rate, toxicity and prompt-injection resilience using scheduled test suites.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Model Risk and Monitoring",
+            "start": 1492,
+            "end": 1622,
+            "context_before": "\u2026 time-bound exceptions.\nClearMind is itself certified to ISO/IEC 42001:2023 (AI management system) and ISO/IEC 27001:2022.\n3. Model Risk and Monitoring\nMonitoring covers data drift, prediction drift, performance decay against ground truth, and fairness metrics across\nprotected attributes. ",
+            "match_text": "Generative AI use cases are evaluated for hallucination rate, toxicity and prompt-injection\nresilience using scheduled test suites",
+            "context_after": ".\nAlerts route to model owners with severity levels and are linked to incident records, so every breach has a\ndocumented response.\n4. Regulatory Compliance and Audit\n\u2022 EU AI Act conformity templates, including technical documentation for high-risk systems.\n\u2022 One-click evidence packs\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.8,
+          "weighted_points": 20.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Regulatory Compliance & Audit",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "EU AI Act conformity templates, evidence packs and immutable audit trails; the supplier is itself ISO/IEC 42001 certified.",
+          "evidence": "One-click evidence packs for internal audit and regulators, with immutable, time-stamped audit trails.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Regulatory Compliance and Audit",
+            "start": 1881,
+            "end": 1982,
+            "context_before": "\u2026 scheduled test suites.\nAlerts route to model owners with severity levels and are linked to incident records, so every breach has a\ndocumented response.\n4. Regulatory Compliance and Audit\n\u2022 EU AI Act conformity templates, including technical documentation for high-risk systems.\n\u2022 ",
+            "match_text": "One-click evidence packs for internal audit and regulators, with immutable, time-stamped audit trails",
+            "context_after": ".\n\u2022 DPDP Act data protection impact assessment templates linked to each use case.\n5. Integration, Deployment and Timeline\nConnectors are available for Databricks, Azure Machine Learning, SageMaker and MLflow. The platform is\ndeployed as single-tenant SaaS in Azure Central India. Implementation\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Integration & Deployment",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Connectors for the main ML platforms, India-hosted single-tenant SaaS; 18-week implementation is longer than peers.",
+          "evidence": "Implementation takes 18 weeks, including policy configuration and migration of the existing model inventory spreadsheet.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Integration, Deployment and Timeline",
+            "start": 2262,
+            "end": 2381,
+            "context_before": "\u2026 trails.\n\u2022 DPDP Act data protection impact assessment templates linked to each use case.\n5. Integration, Deployment and Timeline\nConnectors are available for Databricks, Azure Machine Learning, SageMaker and MLflow. The platform is\ndeployed as single-tenant SaaS in Azure Central India. ",
+            "match_text": "Implementation takes 18 weeks, including policy\nconfiguration and migration of the existing model inventory spreadsheet",
+            "context_after": ".\n6. Commercial Proposal and Support\nItem Basis Amount (INR, excl. GST)\nImplementation and policy configuration Fixed price 1,40,00,000\nPlatform subscription (up to 250 models) Per year x 3 3,30,00,000\nPremium support and assurance reviews Per year x 3 45,00,000\nTotal three-year cost\u2026"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.7,
+          "weighted_points": 10.5,
+          "benchmark_score": 8.0,
+          "gap": -1.0,
+          "relative_pct": 87.5,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Commercials & Support",
+          "score": 5.0,
+          "max_score": 10,
+          "justification": "Most expensive offer at INR 5.15 crore over three years, though support is strong (24x7, 1-hour response).",
+          "evidence": "Total three-year cost 5,15,00,000",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Commercial Proposal and Support",
+            "start": 2644,
+            "end": 2677,
+            "context_before": "\u2026 inventory spreadsheet.\n6. Commercial Proposal and Support\nItem Basis Amount (INR, excl. GST)\nImplementation and policy configuration Fixed price 1,40,00,000\nPlatform subscription (up to 250 models) Per year x 3 3,30,00,000\nPremium support and assurance reviews Per year x 3 45,00,000\n",
+            "match_text": "Total three-year cost 5,15,00,000",
+            "context_after": "\nFictional proposal created for a classroom exercise. Confidential. Page 1\n\n\nSupport is 24x7 for severity 1 incidents with a 1-hour response. References: two private-sector banks and one\ngeneral insurer in India, contact details provided on request.\nFictional proposal created\u2026"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.5,
+          "weighted_points": 7.5,
+          "benchmark_score": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Highest three-year cost",
+        "Longest implementation timeline"
+      ],
+      "overall_summary": "Most complete governance and compliance proposal, at a premium price.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 2,
+        "chars": 3008,
+        "file_type": "pdf",
+        "sha256": "b543493d14ceaa0558a5f5572bcd71ab527946a70faff1454de1457b9df86600",
+        "removed_boilerplate_lines": 2,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"ClearMind Assurance\", \"criteria\": [{\"criterion_id\": 1, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Complete inventory, risk tiering and approval workflows with a policy library mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act.\", \"evidence\": \"Pre-built policy library mapped to NIST AI RMF, ISO/IEC 42001 and the EU AI Act, with 180 configurable controls.\"}, {\"criterion_id\": 2, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Covers drift, performance decay, fairness and GenAI hallucination and prompt-injection testing, linked to incidents.\", \"evidence\": \"Generative AI use cases are evaluated for hallucination rate, toxicity and prompt-injection resilience using scheduled test suites.\"}, {\"criterion_id\": 3, \"score\": 9.0, \"max_score\": 10, \"justification\": \"EU AI Act conformity templates, evidence packs and immutable audit trails; the supplier is itself ISO/IEC 42001 certified.\", \"evidence\": \"One-click evidence packs for internal audit and regulators, with immutable, time-stamped audit trails.\"}, {\"criterion_id\": 4, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Connectors for the main ML platforms, India-hosted single-tenant SaaS; 18-week implementation is longer than peers.\", \"evidence\": \"Implementation takes 18 weeks, including policy configuration and migration of the existing model inventory spreadsheet.\"}, {\"criterion_id\": 5, \"score\": 5.0, \"max_score\": 10, \"justification\": \"Most expensive offer at INR 5.15 crore over three years, though support is strong (24x7, 1-hour response).\", \"evidence\": \"Total three-year cost 5,15,00,000\"}], \"risks\": [\"Highest three-year cost\", \"Longest implementation timeline\"], \"overall_summary\": \"Most complete governance and compliance proposal, at a premium price.\"}"
+      }
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "TrustGrid Systems",
+      "file_name": "trustgrid_systems.pdf",
+      "submission_date": "2026-10-28",
+      "experience_rating": 70.0,
+      "absolute_score": 77.5,
+      "ppi": 87.7778,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Governance & Policy Coverage",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Inventory, lifecycle stage gates and a tailored control library, plus an operating model and staff training.",
+          "evidence": "Operating model: RACI, AI ethics committee charter and training for 300 staff.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Governance and Policy Coverage",
+            "start": 736,
+            "end": 813,
+            "context_before": "\u2026 with MFS's Risk, Compliance and Data Science teams.\n2. Governance and Policy Coverage\n\u2022 AI inventory, risk tiering and lifecycle stage gates from ideation to retirement.\n\u2022 Policy and control library mapped to NIST AI RMF and ISO/IEC 42001, tailored during a 4-week design phase.\n\u2022 ",
+            "match_text": "Operating model: RACI, AI ethics committee charter and training for 300 staff",
+            "context_after": ".\n3. Model Risk and Monitoring\nScheduled validation jobs measure drift, stability and performance; fairness tests run before each release.\nGenerative AI use cases are tested with red-teaming playbooks every quarter. Real-time monitoring is provided\nthrough partner tooling.\n4. Regulatory\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.8,
+          "weighted_points": 20.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Model Risk & Monitoring",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Scheduled validation and quarterly GenAI red-teaming; real-time monitoring relies on partner tooling.",
+          "evidence": "Real-time monitoring is provided through partner tooling.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Model Risk and Monitoring",
+            "start": 1029,
+            "end": 1085,
+            "context_before": "\u2026 model: RACI, AI ethics committee charter and training for 300 staff.\n3. Model Risk and Monitoring\nScheduled validation jobs measure drift, stability and performance; fairness tests run before each release.\nGenerative AI use cases are tested with red-teaming playbooks every quarter. ",
+            "match_text": "Real-time monitoring is provided\nthrough partner tooling",
+            "context_after": ".\n4. Regulatory Compliance and Audit\nOur regulatory team maps each use case to RBI guidance, the DPDP Act and the EU AI Act and produces\naudit-ready documentation packs. Every approval and change is recorded in a tamper-evident audit log. TrustGrid\nis ISO/IEC 27001 certified.\n5. Integration\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.7,
+          "weighted_points": 17.5,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Regulatory Compliance & Audit",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Use-case mapping to RBI, DPDP and EU AI Act with documentation packs and a tamper-evident audit log.",
+          "evidence": "Every approval and change is recorded in a tamper-evident audit log.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Regulatory Compliance and Audit",
+            "start": 1255,
+            "end": 1322,
+            "context_before": "\u2026 are tested with red-teaming playbooks every quarter. Real-time monitoring is provided\nthrough partner tooling.\n4. Regulatory Compliance and Audit\nOur regulatory team maps each use case to RBI guidance, the DPDP Act and the EU AI Act and produces\naudit-ready documentation packs. ",
+            "match_text": "Every approval and change is recorded in a tamper-evident audit log",
+            "context_after": ". TrustGrid\nis ISO/IEC 27001 certified.\n5. Integration and Implementation Plan\nPhase Weeks Outcome\nDesign 1-4 Operating model, policies and risk tiers agreed\nConfigure and integrate 5-12 Control Tower live with MLflow, Databricks and ServiceNow\nPilot 13-16 20 priority models governed\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Integration & Deployment",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Clear 20-week phased plan with a pilot and integrations to MLflow, Databricks and ServiceNow.",
+          "evidence": "Control Tower live with MLflow, Databricks and ServiceNow",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Integration and Implementation Plan",
+            "start": 1509,
+            "end": 1566,
+            "context_before": "\u2026\naudit-ready documentation packs. Every approval and change is recorded in a tamper-evident audit log. TrustGrid\nis ISO/IEC 27001 certified.\n5. Integration and Implementation Plan\nPhase Weeks Outcome\nDesign 1-4 Operating model, policies and risk tiers agreed\nConfigure and integrate 5-12 ",
+            "match_text": "Control Tower live with MLflow, Databricks and ServiceNow",
+            "context_after": "\nPilot 13-16 20 priority models governed end to end\nScale 17-20 All 140 models and 12 GenAI use cases onboarded\n6. Commercials and Support\nItem Amount (INR, excl. GST)\nAdvisory and implementation (fixed price) 95,00,000\nPlatform subscription, 3 years 1,98,00,000\nManaged governance\u2026"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.8,
+          "weighted_points": 12.0,
+          "benchmark_score": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Commercials & Support",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Competitive INR 3.29 crore total with fixed-price implementation and 24x7 P1 support.",
+          "evidence": "Total three-year cost 3,29,00,000",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Commercials and Support",
+            "start": 1875,
+            "end": 1908,
+            "context_before": "\u2026 models governed end to end\nScale 17-20 All 140 models and 12 GenAI use cases onboarded\n6. Commercials and Support\nItem Amount (INR, excl. GST)\nAdvisory and implementation (fixed price) 95,00,000\nPlatform subscription, 3 years 1,98,00,000\nManaged governance support, 3 years 36,00,000\n",
+            "match_text": "Total three-year cost 3,29,00,000",
+            "context_after": "\nSupport is 24x7 for priority 1 issues with a 2-hour response. References: a national insurer and a payments\ncompany, both live since 2025.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.8,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Real-time monitoring depends on a partner product"
+      ],
+      "overall_summary": "Balanced platform-plus-advisory offer with strong value for money.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 1,
+        "chars": 2121,
+        "file_type": "pdf",
+        "sha256": "5f3bbc74d255c115703af02e356c6c4a63aefe35ac841a2774bfe84ff2059a90",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"TrustGrid Systems\", \"criteria\": [{\"criterion_id\": 1, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Inventory, lifecycle stage gates and a tailored control library, plus an operating model and staff training.\", \"evidence\": \"Operating model: RACI, AI ethics committee charter and training for 300 staff.\"}, {\"criterion_id\": 2, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Scheduled validation and quarterly GenAI red-teaming; real-time monitoring relies on partner tooling.\", \"evidence\": \"Real-time monitoring is provided through partner tooling.\"}, {\"criterion_id\": 3, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Use-case mapping to RBI, DPDP and EU AI Act with documentation packs and a tamper-evident audit log.\", \"evidence\": \"Every approval and change is recorded in a tamper-evident audit log.\"}, {\"criterion_id\": 4, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Clear 20-week phased plan with a pilot and integrations to MLflow, Databricks and ServiceNow.\", \"evidence\": \"Control Tower live with MLflow, Databricks and ServiceNow\"}, {\"criterion_id\": 5, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Competitive INR 3.29 crore total with fixed-price implementation and 24x7 P1 support.\", \"evidence\": \"Total three-year cost 3,29,00,000\"}], \"risks\": [\"Real-time monitoring depends on a partner product\"], \"overall_summary\": \"Balanced platform-plus-advisory offer with strong value for money.\"}"
+      }
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Lumora AI",
+      "file_name": "lumora_ai.docx",
+      "submission_date": "2026-10-25",
+      "experience_rating": 64.0,
+      "absolute_score": 72.0,
+      "ppi": 81.6667,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Governance & Policy Coverage",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Good model catalogue, but policy workflows and approval routing are only on the 2027 roadmap.",
+          "evidence": "Policy workflows and approval routing are on our product roadmap for the first half of 2027",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Governance and Policy",
+            "start": 1124,
+            "end": 1215,
+            "context_before": "\u2026 Explainability using SHAP and counterfactual explanations for every scored record.\nOur monitoring has run in production for more than 900 models across our customer base.\n\n3. Governance and Policy\nLumora Observe includes a model catalogue with owners and documentation fields. ",
+            "match_text": "Policy workflows and approval routing are on our product roadmap for the first half of 2027",
+            "context_after": "; until then MFS can continue to manage approvals in its existing GRC tool, which we can integrate with through our API.\n\n4. Regulatory Compliance\nMonitoring evidence can be exported as PDF reports for audit. We are preparing EU AI Act templates. Lumora holds SOC 2 Type II; ISO/IEC\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.6,
+          "weighted_points": 15.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Model Risk & Monitoring",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Strongest monitoring: real-time drift with root-cause analysis, 14 bias metrics, LLM groundedness and jailbreak testing.",
+          "evidence": "Real-time drift detection on features and predictions with automatic root-cause analysis.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Model Risk and Monitoring",
+            "start": 532,
+            "end": 620,
+            "context_before": "\u2026\nLumora AI offers Lumora Observe, a model observability platform that detects when AI systems drift, degrade or behave unfairly, often before business users notice. We propose Lumora Observe as the technical backbone of MFS's AI governance programme.\n\n2. Model Risk and Monitoring\n- ",
+            "match_text": "Real-time drift detection on features and predictions with automatic root-cause analysis",
+            "context_after": ".\n- Fairness dashboards with 14 bias metrics and slice-level analysis.\n- LLM evaluation suite: hallucination scoring, groundedness checks against source documents, toxicity and jailbreak testing, with human review queues.\n- Explainability using SHAP and counterfactual explanations\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.9,
+          "weighted_points": 22.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Regulatory Compliance & Audit",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "SOC 2 Type II and PDF audit exports, but EU AI Act templates are still being prepared and no ISO 42001 yet.",
+          "evidence": "We are preparing EU AI Act templates.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Regulatory Compliance",
+            "start": 1427,
+            "end": 1463,
+            "context_before": "\u2026 approval routing are on our product roadmap for the first half of 2027; until then MFS can continue to manage approvals in its existing GRC tool, which we can integrate with through our API.\n\n4. Regulatory Compliance\nMonitoring evidence can be exported as PDF reports for audit. ",
+            "match_text": "We are preparing EU AI Act templates",
+            "context_after": ". Lumora holds SOC 2 Type II; ISO/IEC 42001 certification is planned for 2027.\n\n5. Integration and Deployment\nLightweight SDKs for Python and Java, and native integrations with Databricks, SageMaker, Vertex AI and Kafka. Lumora can be deployed in the customer's own cloud (AWS or\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Integration & Deployment",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Broad SDK and platform integrations, in-customer-cloud option and a short 10-week rollout.",
+          "evidence": "A typical rollout takes 10 weeks.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "5. Integration and Deployment",
+            "start": 1780,
+            "end": 1812,
+            "context_before": "\u2026 42001 certification is planned for 2027.\n\n5. Integration and Deployment\nLightweight SDKs for Python and Java, and native integrations with Databricks, SageMaker, Vertex AI and Kafka. Lumora can be deployed in the customer's own cloud (AWS or Azure, India regions) or as SaaS. ",
+            "match_text": "A typical rollout takes 10 weeks",
+            "context_after": ".\n\n6. Commercials and Support\nItem | Amount (INR, excl. GST)\nOnboarding and integration | 60,00,000\nSubscription, 3 years (usage-based, up to 200 models) | 2,70,00,000\nTotal three-year cost | 3,30,00,000\nSupport is available in business hours (IST) with a 4-hour response for critical\u2026"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.8,
+          "weighted_points": 12.0,
+          "benchmark_score": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Commercials & Support",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Mid-range price; support is business hours only with a 4-hour critical response.",
+          "evidence": "Support is available in business hours (IST) with a 4-hour response for critical issues.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "6. Commercials and Support",
+            "start": 2019,
+            "end": 2106,
+            "context_before": "\u2026 (AWS or Azure, India regions) or as SaaS. A typical rollout takes 10 weeks.\n\n6. Commercials and Support\nItem | Amount (INR, excl. GST)\nOnboarding and integration | 60,00,000\nSubscription, 3 years (usage-based, up to 200 models) | 2,70,00,000\nTotal three-year cost | 3,30,00,000\n",
+            "match_text": "Support is available in business hours (IST) with a 4-hour response for critical issues",
+            "context_after": ". Reference: a digital lender with 60 production models."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.7,
+          "weighted_points": 10.5,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Governance workflows not yet available",
+        "Business-hours support only"
+      ],
+      "overall_summary": "Best-in-class monitoring, but governance and compliance features are incomplete.",
+      "validation_warnings": [],
+      "document": {
+        "pages": null,
+        "chars": 2162,
+        "file_type": "docx",
+        "sha256": "8f24c2251f321e9e0d906e09648c1b1e12f1d76215aa517126b73a8d2fb87868",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Lumora AI\", \"criteria\": [{\"criterion_id\": 1, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Good model catalogue, but policy workflows and approval routing are only on the 2027 roadmap.\", \"evidence\": \"Policy workflows and approval routing are on our product roadmap for the first half of 2027\"}, {\"criterion_id\": 2, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Strongest monitoring: real-time drift with root-cause analysis, 14 bias metrics, LLM groundedness and jailbreak testing.\", \"evidence\": \"Real-time drift detection on features and predictions with automatic root-cause analysis.\"}, {\"criterion_id\": 3, \"score\": 6.0, \"max_score\": 10, \"justification\": \"SOC 2 Type II and PDF audit exports, but EU AI Act templates are still being prepared and no ISO 42001 yet.\", \"evidence\": \"We are preparing EU AI Act templates.\"}, {\"criterion_id\": 4, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Broad SDK and platform integrations, in-customer-cloud option and a short 10-week rollout.\", \"evidence\": \"A typical rollout takes 10 weeks.\"}, {\"criterion_id\": 5, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Mid-range price; support is business hours only with a 4-hour critical response.\", \"evidence\": \"Support is available in business hours (IST) with a 4-hour response for critical issues.\"}], \"risks\": [\"Governance workflows not yet available\", \"Business-hours support only\"], \"overall_summary\": \"Best-in-class monitoring, but governance and compliance features are incomplete.\"}"
+      }
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Kavach Labs",
+      "file_name": "kavach_labs.doc",
+      "submission_date": "2026-10-24",
+      "experience_rating": 30.0,
+      "absolute_score": 58.0,
+      "ppi": 65.6944,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Governance & Policy Coverage",
+          "score": 5.0,
+          "max_score": 10,
+          "justification": "Basic model register and a customisable checklist; no policy library or risk tiering.",
+          "evidence": "Simple approval checklist that can be customised by the customer.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Capabilities",
+            "start": 542,
+            "end": 606,
+            "context_before": "\u2026 Guard, a lightweight tool for registering AI models and running bias and drift checks. We focus on getting teams started quickly at a low cost.\n2. Capabilities\nModel register with owners and basic documentation templates.\nMonthly drift reports and bias checks for tabular models.\n",
+            "match_text": "Simple approval checklist that can be customised by the customer",
+            "context_after": ".\nGenerative AI monitoring is not yet available. Regulatory mapping to the EU AI Act and RBI guidance is not included; customers typically engage their own consultants for this.\n3. Deployment\nKavach Guard is a SaaS product hosted in AWS Mumbai. It integrates with MLflow through a\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.5,
+          "weighted_points": 12.5,
+          "benchmark_score": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Model Risk & Monitoring",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Monthly drift and bias reports for tabular models only; no generative AI monitoring.",
+          "evidence": "Generative AI monitoring is not yet available.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Capabilities",
+            "start": 608,
+            "end": 653,
+            "context_before": "\u2026 bias and drift checks. We focus on getting teams started quickly at a low cost.\n2. Capabilities\nModel register with owners and basic documentation templates.\nMonthly drift reports and bias checks for tabular models.\nSimple approval checklist that can be customised by the customer.\n",
+            "match_text": "Generative AI monitoring is not yet available",
+            "context_after": ". Regulatory mapping to the EU AI Act and RBI guidance is not included; customers typically engage their own consultants for this.\n3. Deployment\nKavach Guard is a SaaS product hosted in AWS Mumbai. It integrates with MLflow through a REST API. Onboarding takes 6 weeks.\n4. Pricing\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.6,
+          "weighted_points": 15.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Regulatory Compliance & Audit",
+          "score": 4.0,
+          "max_score": 10,
+          "justification": "No regulatory mapping; customers must engage their own consultants.",
+          "evidence": "Regulatory mapping to the EU AI Act and RBI guidance is not included",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Capabilities",
+            "start": 655,
+            "end": 723,
+            "context_before": "\u2026 started quickly at a low cost.\n2. Capabilities\nModel register with owners and basic documentation templates.\nMonthly drift reports and bias checks for tabular models.\nSimple approval checklist that can be customised by the customer.\nGenerative AI monitoring is not yet available. ",
+            "match_text": "Regulatory mapping to the EU AI Act and RBI guidance is not included",
+            "context_after": "; customers typically engage their own consultants for this.\n3. Deployment\nKavach Guard is a SaaS product hosted in AWS Mumbai. It integrates with MLflow through a REST API. Onboarding takes 6 weeks.\n4. Pricing and Support\nItem | Amount (INR, excl. GST)\nOnboarding | 12,00,000\nSubscription,\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.4,
+          "weighted_points": 8.0,
+          "benchmark_score": 9.0,
+          "gap": -5.0,
+          "relative_pct": 44.4444,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Integration & Deployment",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Simple SaaS in AWS Mumbai with an MLflow API integration and 6-week onboarding.",
+          "evidence": "It integrates with MLflow through a REST API.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Deployment",
+            "start": 851,
+            "end": 895,
+            "context_before": "\u2026 that can be customised by the customer.\nGenerative AI monitoring is not yet available. Regulatory mapping to the EU AI Act and RBI guidance is not included; customers typically engage their own consultants for this.\n3. Deployment\nKavach Guard is a SaaS product hosted in AWS Mumbai. ",
+            "match_text": "It integrates with MLflow through a REST API",
+            "context_after": ". Onboarding takes 6 weeks.\n4. Pricing and Support\nItem | Amount (INR, excl. GST)\nOnboarding | 12,00,000\nSubscription, 3 years | 1,08,00,000\nTotal three-year cost | 1,20,00,000\n\nSupport is by email during business hours. Our largest customer runs 25 models."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.6,
+          "weighted_points": 9.0,
+          "benchmark_score": 8.0,
+          "gap": -2.0,
+          "relative_pct": 75.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Commercials & Support",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Lowest cost at INR 1.2 crore; email support only and limited scale experience.",
+          "evidence": "Total three-year cost 1,20,00,000",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Pricing and Support",
+            "start": 1036,
+            "end": 1071,
+            "context_before": "\u2026 their own consultants for this.\n3. Deployment\nKavach Guard is a SaaS product hosted in AWS Mumbai. It integrates with MLflow through a REST API. Onboarding takes 6 weeks.\n4. Pricing and Support\nItem | Amount (INR, excl. GST)\nOnboarding | 12,00,000\nSubscription, 3 years | 1,08,00,000\n",
+            "match_text": "Total three-year cost | 1,20,00,000",
+            "context_after": "\n\nSupport is by email during business hours. Our largest customer runs 25 models."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.9,
+          "weighted_points": 13.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "No regulatory compliance support",
+        "Largest customer runs only 25 models"
+      ],
+      "overall_summary": "Low-cost starter tool that does not meet MFS's compliance needs.",
+      "validation_warnings": [],
+      "document": {
+        "pages": null,
+        "chars": 1152,
+        "file_type": "doc",
+        "sha256": "cec59b107b5feaadec27f1e1dabe3e53ac717df76508fbd9144cb78d2e9a2ee5",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Kavach Labs\", \"criteria\": [{\"criterion_id\": 1, \"score\": 5.0, \"max_score\": 10, \"justification\": \"Basic model register and a customisable checklist; no policy library or risk tiering.\", \"evidence\": \"Simple approval checklist that can be customised by the customer.\"}, {\"criterion_id\": 2, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Monthly drift and bias reports for tabular models only; no generative AI monitoring.\", \"evidence\": \"Generative AI monitoring is not yet available.\"}, {\"criterion_id\": 3, \"score\": 4.0, \"max_score\": 10, \"justification\": \"No regulatory mapping; customers must engage their own consultants.\", \"evidence\": \"Regulatory mapping to the EU AI Act and RBI guidance is not included\"}, {\"criterion_id\": 4, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Simple SaaS in AWS Mumbai with an MLflow API integration and 6-week onboarding.\", \"evidence\": \"It integrates with MLflow through a REST API.\"}, {\"criterion_id\": 5, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Lowest cost at INR 1.2 crore; email support only and limited scale experience.\", \"evidence\": \"Total three-year cost 1,20,00,000\"}], \"risks\": [\"No regulatory compliance support\", \"Largest customer runs only 25 models\"], \"overall_summary\": \"Low-cost starter tool that does not meet MFS's compliance needs.\"}"
+      }
+    }
+  ],
+  "excluded_suppliers": [],
+  "warnings": [],
+  "agent_log": [
+    {
+      "at": "13:53:30",
+      "step": "create_batch",
+      "level": "info",
+      "message": "Batch RFP-20261028-135330-9352F2 created with 4 supplier(s) by evaluator."
+    },
+    {
+      "at": "13:53:30",
+      "step": "load_criteria",
+      "level": "info",
+      "message": "5 active criteria loaded for Technology \u2013 AI Governance."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "ClearMind Assurance: 2 pages, 3,008 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Lumora AI: Word (.docx), 2,162 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "TrustGrid Systems: 1 pages, 2,121 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Kavach Labs: Word 97-2003 (.doc), 1,152 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "ClearMind Assurance: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Lumora AI: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "TrustGrid Systems: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Kavach Labs: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "ClearMind Assurance: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Lumora AI: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "TrustGrid Systems: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Kavach Labs: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "score_absolute",
+      "level": "info",
+      "message": "Absolute weighted scores calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "benchmark_peers",
+      "level": "info",
+      "message": "Benchmarks, gaps, relative % and PPI calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "rank_suppliers",
+      "level": "info",
+      "message": "4 suppliers ranked; tie-break rules used 0 time(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "persist_results",
+      "level": "info",
+      "message": "Run saved with status 'completed'."
+    }
+  ]
+}

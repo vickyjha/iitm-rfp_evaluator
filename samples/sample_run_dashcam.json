@@ -1,0 +1,999 @@
+{
+  "rfp_run_id": "RFP-20261028-135330-523714",
+  "rfp_title": "Supply of 5,000 dual-channel dashcams for the commercial fleet",
+  "rfp_reference": "VFS-RFP-2026-008",
+  "category": {
+    "category_id": 3,
+    "code": "AUTO_DASHCAM",
+    "label": "Automotive \u2013 Car Dashcam Manufacturers",
+    "note": ""
+  },
+  "created_at": "2026-10-28T13:53:30+00:00",
+  "completed_at": "2026-10-28T13:53:30+00:00",
+  "status": "completed",
+  "created_by": "evaluator",
+  "llm": {
+    "mode": "mock",
+    "model": "mock-evaluator",
+    "prompt_version": "v2.0",
+    "temperature": 0
+  },
+  "disclaimer": "Mock mode: scores were produced by the offline simulator for demonstration, not by an AI model. Do not use them for real decisions.",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 11,
+      "name": "Product Specifications",
+      "description": "Video resolution, low-light performance, field of view, storage, GPS/ADAS features and connectivity.",
+      "weight": 25.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 12,
+      "name": "Quality & Certifications",
+      "description": "Automotive-grade components, operating temperature range, AIS/BIS/CE/FCC certifications, failure rates and testing.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 13,
+      "name": "Manufacturing Capacity & Lead Time",
+      "description": "Monthly capacity, lead times for the requested volume, supply-chain resilience and plant locations.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 14,
+      "name": "Pricing & Warranty",
+      "description": "Unit price at volume, tooling/NRE costs, payment terms, warranty length and replacement policy.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 15,
+      "name": "Data Privacy & Firmware Support",
+      "description": "Data encryption, privacy controls, over-the-air firmware updates and long-term software support.",
+      "weight": 15.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_weighted_score": "sum over criteria of (score / max_score) x weight",
+    "criterion_benchmark": "highest validated score for the criterion across all ranked suppliers",
+    "criterion_gap": "supplier score - benchmark score (0 for the benchmark leader, otherwise negative)",
+    "relative_performance_pct": "(supplier score / benchmark score) x 100; 100 when the benchmark is 0",
+    "peer_performance_index": "sum(relative_pct x weight) / sum(weights)",
+    "rounding": "absolute score and PPI rounded to 4 decimals before sorting"
+  },
+  "tie_break_order": [
+    "1) Higher Peer Performance Index (PPI) first",
+    "2) Earlier submission date",
+    "3) Higher historical experience rating",
+    "4) Supplier name in ascending (A-Z) order"
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Zento Mobility",
+      "absolute_score": 79.5,
+      "ppi": 88.3333,
+      "submission_date": "2026-10-26",
+      "experience_rating": 65.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "VisionDrive Electronics",
+      "absolute_score": 78.5,
+      "ppi": 87.2222,
+      "submission_date": "2026-10-27",
+      "experience_rating": 85.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "RoadEye Technologies",
+      "absolute_score": 74.5,
+      "ppi": 82.7778,
+      "submission_date": "2026-10-25",
+      "experience_rating": 70.0
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Kestrel Auto Imaging",
+      "absolute_score": 68.0,
+      "ppi": 75.5556,
+      "submission_date": "2026-10-28",
+      "experience_rating": 50.0
+    }
+  ],
+  "benchmarks": [
+    {
+      "criterion_id": 11,
+      "criterion_name": "Product Specifications",
+      "weight": 25.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "VisionDrive Electronics"
+      ]
+    },
+    {
+      "criterion_id": 12,
+      "criterion_name": "Quality & Certifications",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "VisionDrive Electronics"
+      ]
+    },
+    {
+      "criterion_id": 13,
+      "criterion_name": "Manufacturing Capacity & Lead Time",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "RoadEye Technologies"
+      ]
+    },
+    {
+      "criterion_id": 14,
+      "criterion_name": "Pricing & Warranty",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Kestrel Auto Imaging"
+      ]
+    },
+    {
+      "criterion_id": 15,
+      "criterion_name": "Data Privacy & Firmware Support",
+      "weight": 15.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Zento Mobility"
+      ]
+    }
+  ],
+  "tie_break_explanations": [
+    {
+      "higher": "Zento Mobility",
+      "lower": "VisionDrive Electronics",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "Zento Mobility ranks above VisionDrive Electronics: higher PPI (88.3333 vs 87.2222)."
+    },
+    {
+      "higher": "VisionDrive Electronics",
+      "lower": "RoadEye Technologies",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "VisionDrive Electronics ranks above RoadEye Technologies: higher PPI (87.2222 vs 82.7778)."
+    },
+    {
+      "higher": "RoadEye Technologies",
+      "lower": "Kestrel Auto Imaging",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "RoadEye Technologies ranks above Kestrel Auto Imaging: higher PPI (82.7778 vs 75.5556)."
+    }
+  ],
+  "suppliers": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Zento Mobility",
+      "file_name": "zento_mobility.docx",
+      "submission_date": "2026-10-26",
+      "experience_rating": 65.0,
+      "absolute_score": 79.5,
+      "ppi": 88.3333,
+      "criteria": [
+        {
+          "criterion_id": 11,
+          "criterion_name": "Product Specifications",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "2K HDR at 60 fps, IR cabin camera, encrypted backup, 4G/GPS, ADAS and distraction detection.",
+          "evidence": "4G LTE, GPS, ADAS alerts and driver distraction detection.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Product Specifications",
+            "start": 623,
+            "end": 680,
+            "context_before": "\u2026 design and a fleet safety portal, built and supported in India.\n\n2. Product Specifications\n- Front camera 2K HDR at 60 fps with Sony STARVIS sensor; cabin camera 1080p infrared.\n- Field of view 140 degrees front.\n- Storage up to 512 GB with encrypted eMMC backup of event clips.\n- ",
+            "match_text": "4G LTE, GPS, ADAS alerts and driver distraction detection",
+            "context_after": ".\n\n3. Quality and Certifications\nAIS-140, BIS and CE certified; FCC not applicable for the Indian market. Operating range -20 to 65 degrees Celsius. Manufactured at our ISO 9001 certified plant in Pune.\n\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 15,000 units.\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.8,
+          "weighted_points": 20.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 12,
+          "criterion_name": "Quality & Certifications",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "AIS-140, BIS and CE certified, -20 to 65\u00b0C, ISO 9001 plant.",
+          "evidence": "AIS-140, BIS and CE certified",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Quality and Certifications",
+            "start": 716,
+            "end": 745,
+            "context_before": "\u2026 Front camera 2K HDR at 60 fps with Sony STARVIS sensor; cabin camera 1080p infrared.\n- Field of view 140 degrees front.\n- Storage up to 512 GB with encrypted eMMC backup of event clips.\n- 4G LTE, GPS, ADAS alerts and driver distraction detection.\n\n3. Quality and Certifications\n",
+            "match_text": "AIS-140, BIS and CE certified",
+            "context_after": "; FCC not applicable for the Indian market. Operating range -20 to 65 degrees Celsius. Manufactured at our ISO 9001 certified plant in Pune.\n\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 15,000 units. All 5,000 units can be delivered within 6 weeks of purchase order.\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 13,
+          "criterion_name": "Manufacturing Capacity & Lead Time",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "15,000 units/month with full delivery in 6 weeks.",
+          "evidence": "All 5,000 units can be delivered within 6 weeks of purchase order.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Manufacturing Capacity and Lead Time",
+            "start": 964,
+            "end": 1029,
+            "context_before": "\u2026\n3. Quality and Certifications\nAIS-140, BIS and CE certified; FCC not applicable for the Indian market. Operating range -20 to 65 degrees Celsius. Manufactured at our ISO 9001 certified plant in Pune.\n\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 15,000 units. ",
+            "match_text": "All 5,000 units can be delivered within 6 weeks of purchase order",
+            "context_after": ".\n\n5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nZento Guard Duo unit price at 5,000 units | 10,400\nFleet safety portal, per vehicle per year | 600\nWarranty is 2 years with on-site replacement in 20 cities.\n\n6. Data Privacy and Firmware Support\nEnd-to-end encryption\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 14,
+          "criterion_name": "Pricing & Warranty",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Mid-range unit price plus portal fee; 2-year on-site warranty.",
+          "evidence": "Warranty is 2 years with on-site replacement in 20 cities.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "5. Pricing and Warranty",
+            "start": 1189,
+            "end": 1246,
+            "context_before": "\u2026 Capacity and Lead Time\nMonthly capacity is 15,000 units. All 5,000 units can be delivered within 6 weeks of purchase order.\n\n5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nZento Guard Duo unit price at 5,000 units | 10,400\nFleet safety portal, per vehicle per year | 600\n",
+            "match_text": "Warranty is 2 years with on-site replacement in 20 cities",
+            "context_after": ".\n\n6. Data Privacy and Firmware Support\nEnd-to-end encryption from device to cloud, data hosted in India, role-based access and automatic face blurring for shared clips, aligned with the DPDP Act. Over-the-air firmware updates are guaranteed for 6 years."
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 15,
+          "criterion_name": "Data Privacy & Firmware Support",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "End-to-end encryption, India hosting, face blurring and 6 years of OTA updates.",
+          "evidence": "End-to-end encryption from device to cloud, data hosted in India",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "6. Data Privacy and Firmware Support",
+            "start": 1289,
+            "end": 1353,
+            "context_before": "\u2026 weeks of purchase order.\n\n5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nZento Guard Duo unit price at 5,000 units | 10,400\nFleet safety portal, per vehicle per year | 600\nWarranty is 2 years with on-site replacement in 20 cities.\n\n6. Data Privacy and Firmware Support\n",
+            "match_text": "End-to-end encryption from device to cloud, data hosted in India",
+            "context_after": ", role-based access and automatic face blurring for shared clips, aligned with the DPDP Act. Over-the-air firmware updates are guaranteed for 6 years."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.9,
+          "weighted_points": 13.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Recurring portal fee adds to total cost"
+      ],
+      "overall_summary": "Well-balanced offer with the strongest privacy and firmware commitments.",
+      "validation_warnings": [],
+      "document": {
+        "pages": null,
+        "chars": 1503,
+        "file_type": "docx",
+        "sha256": "ab3a338cfe4342c8abcc8eee23ab3e9a1e05696ed0a7ab7b81deaa845fbb9de8",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Zento Mobility\", \"criteria\": [{\"criterion_id\": 11, \"score\": 8.0, \"max_score\": 10, \"justification\": \"2K HDR at 60 fps, IR cabin camera, encrypted backup, 4G/GPS, ADAS and distraction detection.\", \"evidence\": \"4G LTE, GPS, ADAS alerts and driver distraction detection.\"}, {\"criterion_id\": 12, \"score\": 8.0, \"max_score\": 10, \"justification\": \"AIS-140, BIS and CE certified, -20 to 65\\u00b0C, ISO 9001 plant.\", \"evidence\": \"AIS-140, BIS and CE certified\"}, {\"criterion_id\": 13, \"score\": 8.0, \"max_score\": 10, \"justification\": \"15,000 units/month with full delivery in 6 weeks.\", \"evidence\": \"All 5,000 units can be delivered within 6 weeks of purchase order.\"}, {\"criterion_id\": 14, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Mid-range unit price plus portal fee; 2-year on-site warranty.\", \"evidence\": \"Warranty is 2 years with on-site replacement in 20 cities.\"}, {\"criterion_id\": 15, \"score\": 9.0, \"max_score\": 10, \"justification\": \"End-to-end encryption, India hosting, face blurring and 6 years of OTA updates.\", \"evidence\": \"End-to-end encryption from device to cloud, data hosted in India\"}], \"risks\": [\"Recurring portal fee adds to total cost\"], \"overall_summary\": \"Well-balanced offer with the strongest privacy and firmware commitments.\"}"
+      }
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "VisionDrive Electronics",
+      "file_name": "visiondrive_electronics.pdf",
+      "submission_date": "2026-10-27",
+      "experience_rating": 85.0,
+      "absolute_score": 78.5,
+      "ppi": 87.2222,
+      "criteria": [
+        {
+          "criterion_id": 11,
+          "criterion_name": "Product Specifications",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "4K STARVIS 2 front, IR cabin camera, 512 GB, 4G/GPS and full ADAS.",
+          "evidence": "4K (3840x2160) at 30 fps, Sony STARVIS 2 sensor",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Product Specifications",
+            "start": 561,
+            "end": 608,
+            "context_before": "\u2026\ncommercial fleet\nSubmission date: 2026-10-21\n1. Executive Summary\nVisionDrive Electronics proposes the VD-Pro X2, a dual-channel dashcam engineered for commercial vehicles\nthat run long shifts in Indian road and climate conditions.\n2. Product Specifications\nFeature VD-Pro X2\nFront camera ",
+            "match_text": "4K (3840x2160) at 30 fps, Sony STARVIS 2 sensor",
+            "context_after": "\nCabin camera 1080p infrared for night-time driver monitoring\nField of view 140 degrees front, 120 degrees cabin\nStorage Up to 512 GB microSD, loop recording, event lock\nConnectivity 4G LTE, Wi-Fi and GPS with live tracking\nADAS Forward collision and lane departure warnings, driver\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.9,
+          "weighted_points": 22.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 12,
+          "criterion_name": "Quality & Certifications",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Supercapacitor design, -20 to 70\u00b0C, AIS-140/BIS/CE/FCC, IATF 16949 plant, 0.6% failure rate.",
+          "evidence": "The product is certified to AIS-140, BIS, CE and FCC.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Quality and Certifications",
+            "start": 1065,
+            "end": 1117,
+            "context_before": "\u2026\nConnectivity 4G LTE, Wi-Fi and GPS with live tracking\nADAS Forward collision and lane departure warnings, driver fatigue alerts\n3. Quality and Certifications\nBuilt with automotive-grade components and a supercapacitor instead of a battery, rated for -20 to 70 degrees\nCelsius operation. ",
+            "match_text": "The product is certified to AIS-140, BIS, CE and FCC",
+            "context_after": ". Our plant is IATF 16949 certified and the\nfield failure rate over the last 24 months was 0.6%.\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 12,000 units at our Chennai plant. The first 2,000 units can ship 8 weeks after purchase order,\nwith the balance within 14 weeks.\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 13,
+          "criterion_name": "Manufacturing Capacity & Lead Time",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "12,000 units/month but full delivery takes 14 weeks.",
+          "evidence": "The first 2,000 units can ship 8 weeks after purchase order, with the balance within 14 weeks.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Manufacturing Capacity and Lead Time",
+            "start": 1309,
+            "end": 1402,
+            "context_before": "\u2026 -20 to 70 degrees\nCelsius operation. The product is certified to AIS-140, BIS, CE and FCC. Our plant is IATF 16949 certified and the\nfield failure rate over the last 24 months was 0.6%.\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 12,000 units at our Chennai plant. ",
+            "match_text": "The first 2,000 units can ship 8 weeks after purchase order,\nwith the balance within 14 weeks",
+            "context_after": ".\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\nVD-Pro X2 unit price at 5,000 units 11,900\nOne-time tooling for custom mounting bracket 6,50,000\nExtended warranty (years 3-4), per unit 900\nStandard warranty is 2 years with advance replacement. Payment terms: 30% advance, 70%\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 14,
+          "criterion_name": "Pricing & Warranty",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Highest unit price plus tooling cost; 2-year warranty with advance replacement.",
+          "evidence": "VD-Pro X2 unit price at 5,000 units",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Pricing and Warranty",
+            "start": 1457,
+            "end": 1492,
+            "context_before": "\u2026 rate over the last 24 months was 0.6%.\n4. Manufacturing Capacity and Lead Time\nMonthly capacity is 12,000 units at our Chennai plant. The first 2,000 units can ship 8 weeks after purchase order,\nwith the balance within 14 weeks.\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\n",
+            "match_text": "VD-Pro X2 unit price at 5,000 units",
+            "context_after": " 11,900\nOne-time tooling for custom mounting bracket 6,50,000\nExtended warranty (years 3-4), per unit 900\nStandard warranty is 2 years with advance replacement. Payment terms: 30% advance, 70% on delivery.\n6. Data Privacy and Firmware Support\nVideo is encrypted on the device (AES-256)\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 15,
+          "criterion_name": "Data Privacy & Firmware Support",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "AES-256 on device, India-hosted cloud, 5 years of OTA updates.",
+          "evidence": "Video is encrypted on the device (AES-256) and in transit.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Data Privacy and Firmware Support",
+            "start": 1735,
+            "end": 1792,
+            "context_before": "\u2026 GST)\nVD-Pro X2 unit price at 5,000 units 11,900\nOne-time tooling for custom mounting bracket 6,50,000\nExtended warranty (years 3-4), per unit 900\nStandard warranty is 2 years with advance replacement. Payment terms: 30% advance, 70% on delivery.\n6. Data Privacy and Firmware Support\n",
+            "match_text": "Video is encrypted on the device (AES-256) and in transit",
+            "context_after": ". Cloud data is stored in India. Over-the-air firmware\nupdates are provided for 5 years, with security patches within 30 days of a disclosed vulnerability.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.8,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Highest unit price",
+        "14-week full delivery"
+      ],
+      "overall_summary": "Best hardware and quality credentials, at a premium price.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 1,
+        "chars": 2021,
+        "file_type": "pdf",
+        "sha256": "f35e6755bff1170646019a3b45c003fbaf2d17d748cbc5eb8794ae8469fefa48",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"VisionDrive Electronics\", \"criteria\": [{\"criterion_id\": 11, \"score\": 9.0, \"max_score\": 10, \"justification\": \"4K STARVIS 2 front, IR cabin camera, 512 GB, 4G/GPS and full ADAS.\", \"evidence\": \"4K (3840x2160) at 30 fps, Sony STARVIS 2 sensor\"}, {\"criterion_id\": 12, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Supercapacitor design, -20 to 70\\u00b0C, AIS-140/BIS/CE/FCC, IATF 16949 plant, 0.6% failure rate.\", \"evidence\": \"The product is certified to AIS-140, BIS, CE and FCC.\"}, {\"criterion_id\": 13, \"score\": 7.0, \"max_score\": 10, \"justification\": \"12,000 units/month but full delivery takes 14 weeks.\", \"evidence\": \"The first 2,000 units can ship 8 weeks after purchase order, with the balance within 14 weeks.\"}, {\"criterion_id\": 14, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Highest unit price plus tooling cost; 2-year warranty with advance replacement.\", \"evidence\": \"VD-Pro X2 unit price at 5,000 units\"}, {\"criterion_id\": 15, \"score\": 8.0, \"max_score\": 10, \"justification\": \"AES-256 on device, India-hosted cloud, 5 years of OTA updates.\", \"evidence\": \"Video is encrypted on the device (AES-256) and in transit.\"}], \"risks\": [\"Highest unit price\", \"14-week full delivery\"], \"overall_summary\": \"Best hardware and quality credentials, at a premium price.\"}"
+      }
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "RoadEye Technologies",
+      "file_name": "roadeye_technologies.docx",
+      "submission_date": "2026-10-25",
+      "experience_rating": 70.0,
+      "absolute_score": 74.5,
+      "ppi": 82.7778,
+      "criteria": [
+        {
+          "criterion_id": 11,
+          "criterion_name": "Product Specifications",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "2K front and IR cabin camera with 4G/GPS, but no ADAS features.",
+          "evidence": "GPS and 4G LTE; ADAS features are not included.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Product Specifications",
+            "start": 634,
+            "end": 648,
+            "context_before": "\u2026 200, a reliable dual-channel dashcam, with short lead times and competitive pricing.\n\n2. Product Specifications\n- Front camera 2K (2560x1440) at 30 fps; cabin camera 1080p with infrared.\n- Field of view 130 degrees front.\n- Storage up to 256 GB microSD with loop recording.\n- ",
+            "match_text": "GPS and 4G LTE",
+            "context_after": "; ADAS features are not included.\n\n3. Quality and Certifications\nThe RE-Fleet 200 is AIS-140 and BIS certified; CE certification is in progress. Units are burn-in tested for 24 hours before dispatch. Operating temperature is 0 to 60 degrees Celsius.\n\n4. Manufacturing Capacity\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.7,
+          "weighted_points": 17.5,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 12,
+          "criterion_name": "Quality & Certifications",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "AIS-140 and BIS certified, CE pending; narrower 0 to 60\u00b0C range.",
+          "evidence": "CE certification is in progress.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Quality and Certifications",
+            "start": 763,
+            "end": 794,
+            "context_before": "\u2026 camera 2K (2560x1440) at 30 fps; cabin camera 1080p with infrared.\n- Field of view 130 degrees front.\n- Storage up to 256 GB microSD with loop recording.\n- GPS and 4G LTE; ADAS features are not included.\n\n3. Quality and Certifications\nThe RE-Fleet 200 is AIS-140 and BIS certified; ",
+            "match_text": "CE certification is in progress",
+            "context_after": ". Units are burn-in tested for 24 hours before dispatch. Operating temperature is 0 to 60 degrees Celsius.\n\n4. Manufacturing Capacity and Lead Time\nWith two plants and a combined capacity of 40,000 units per month, we can deliver all 5,000 units within 4 weeks of purchase order.\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 13,
+          "criterion_name": "Manufacturing Capacity & Lead Time",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "40,000 units/month and full delivery in 4 weeks with buffer stock.",
+          "evidence": "we can deliver all 5,000 units within 4 weeks of purchase order",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Manufacturing Capacity and Lead Time",
+            "start": 1012,
+            "end": 1075,
+            "context_before": "\u2026 is AIS-140 and BIS certified; CE certification is in progress. Units are burn-in tested for 24 hours before dispatch. Operating temperature is 0 to 60 degrees Celsius.\n\n4. Manufacturing Capacity and Lead Time\nWith two plants and a combined capacity of 40,000 units per month, ",
+            "match_text": "we can deliver all 5,000 units within 4 weeks of purchase order",
+            "context_after": ". We keep 3 months of buffer stock for key components.\n\n5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nRE-Fleet 200 unit price at 5,000 units | 8,700\nTooling / NRE | Nil\nWarranty is 18 months, with replacement within 10 working days.\n\n6. Data Privacy and Firmware\nRecordings\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 14,
+          "criterion_name": "Pricing & Warranty",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Low unit price, no tooling cost, 18-month warranty.",
+          "evidence": "Warranty is 18 months, with replacement within 10 working days.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "5. Pricing and Warranty",
+            "start": 1256,
+            "end": 1318,
+            "context_before": "\u2026 capacity of 40,000 units per month, we can deliver all 5,000 units within 4 weeks of purchase order. We keep 3 months of buffer stock for key components.\n\n5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nRE-Fleet 200 unit price at 5,000 units | 8,700\nTooling / NRE | Nil\n",
+            "match_text": "Warranty is 18 months, with replacement within 10 working days",
+            "context_after": ".\n\n6. Data Privacy and Firmware\nRecordings are stored on the SD card; cloud upload uses TLS. Firmware updates are provided through our service centres for 2 years."
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 15,
+          "criterion_name": "Data Privacy & Firmware Support",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "TLS for uploads but no device encryption; firmware updates only via service centres for 2 years.",
+          "evidence": "Firmware updates are provided through our service centres for 2 years.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "6. Data Privacy and Firmware",
+            "start": 1414,
+            "end": 1483,
+            "context_before": "\u2026 5. Pricing and Warranty\nItem | Amount (INR, excl. GST)\nRE-Fleet 200 unit price at 5,000 units | 8,700\nTooling / NRE | Nil\nWarranty is 18 months, with replacement within 10 working days.\n\n6. Data Privacy and Firmware\nRecordings are stored on the SD card; cloud upload uses TLS. ",
+            "match_text": "Firmware updates are provided through our service centres for 2 years",
+            "context_after": "."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.6,
+          "weighted_points": 9.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "No ADAS",
+        "Limited firmware support period"
+      ],
+      "overall_summary": "Fastest delivery at a good price, with fewer features and weaker privacy controls.",
+      "validation_warnings": [],
+      "document": {
+        "pages": null,
+        "chars": 1484,
+        "file_type": "docx",
+        "sha256": "6ec7a6dd3037f68b69ceb88236a4534984bee94a253b5e05bdefa48148d853c8",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"RoadEye Technologies\", \"criteria\": [{\"criterion_id\": 11, \"score\": 7.0, \"max_score\": 10, \"justification\": \"2K front and IR cabin camera with 4G/GPS, but no ADAS features.\", \"evidence\": \"GPS and 4G LTE; ADAS features are not included.\"}, {\"criterion_id\": 12, \"score\": 7.0, \"max_score\": 10, \"justification\": \"AIS-140 and BIS certified, CE pending; narrower 0 to 60\\u00b0C range.\", \"evidence\": \"CE certification is in progress.\"}, {\"criterion_id\": 13, \"score\": 9.0, \"max_score\": 10, \"justification\": \"40,000 units/month and full delivery in 4 weeks with buffer stock.\", \"evidence\": \"we can deliver all 5,000 units within 4 weeks of purchase order\"}, {\"criterion_id\": 14, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Low unit price, no tooling cost, 18-month warranty.\", \"evidence\": \"Warranty is 18 months, with replacement within 10 working days.\"}, {\"criterion_id\": 15, \"score\": 6.0, \"max_score\": 10, \"justification\": \"TLS for uploads but no device encryption; firmware updates only via service centres for 2 years.\", \"evidence\": \"Firmware updates are provided through our service centres for 2 years.\"}], \"risks\": [\"No ADAS\", \"Limited firmware support period\"], \"overall_summary\": \"Fastest delivery at a good price, with fewer features and weaker privacy controls.\"}"
+      }
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Kestrel Auto Imaging",
+      "file_name": "kestrel_auto_imaging.pdf",
+      "submission_date": "2026-10-28",
+      "experience_rating": 50.0,
+      "absolute_score": 68.0,
+      "ppi": 75.5556,
+      "criteria": [
+        {
+          "criterion_id": 11,
+          "criterion_name": "Product Specifications",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "4K front with wide 150\u00b0 view, but no 4G connectivity.",
+          "evidence": "Lane departure warning; no 4G connectivity in the standard model.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Product Specifications",
+            "start": 606,
+            "end": 628,
+            "context_before": "\u2026 distributes the K-Eye 4K dashcam, manufactured by our contract partner, and\nprovides local service in India.\n2. Product Specifications\n\u2022 4K front camera at 30 fps and 1080p cabin camera.\n\u2022 Field of view 150 degrees front.\n\u2022 Storage up to 256 GB microSD; Wi-Fi app for downloads.\n\u2022 ",
+            "match_text": "Lane departure warning",
+            "context_after": "; no 4G connectivity in the standard model.\n3. Quality and Certifications\nThe K-Eye 4K is CE and FCC certified. BIS certification will be applied for after the order is confirmed. Operating\ntemperature is -10 to 60 degrees Celsius.\n4. Supply and Lead Time\nUnits are shipped by sea\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.8,
+          "weighted_points": 20.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 12,
+          "criterion_name": "Quality & Certifications",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "CE and FCC only; BIS certification not yet applied for.",
+          "evidence": "BIS certification will be applied for after the order is confirmed.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Quality and Certifications",
+            "start": 740,
+            "end": 806,
+            "context_before": "\u2026\n\u2022 4K front camera at 30 fps and 1080p cabin camera.\n\u2022 Field of view 150 degrees front.\n\u2022 Storage up to 256 GB microSD; Wi-Fi app for downloads.\n\u2022 Lane departure warning; no 4G connectivity in the standard model.\n3. Quality and Certifications\nThe K-Eye 4K is CE and FCC certified. ",
+            "match_text": "BIS certification will be applied for after the order is confirmed",
+            "context_after": ". Operating\ntemperature is -10 to 60 degrees Celsius.\n4. Supply and Lead Time\nUnits are shipped by sea from our contract manufacturer. Expected lead time is 12 to 16 weeks, depending on\nshipping schedules and customs clearance.\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 13,
+          "criterion_name": "Manufacturing Capacity & Lead Time",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Imported by sea with an uncertain 12 to 16 week lead time.",
+          "evidence": "Expected lead time is 12 to 16 weeks",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Supply and Lead Time",
+            "start": 941,
+            "end": 977,
+            "context_before": "\u2026 standard model.\n3. Quality and Certifications\nThe K-Eye 4K is CE and FCC certified. BIS certification will be applied for after the order is confirmed. Operating\ntemperature is -10 to 60 degrees Celsius.\n4. Supply and Lead Time\nUnits are shipped by sea from our contract manufacturer. ",
+            "match_text": "Expected lead time is 12 to 16 weeks",
+            "context_after": ", depending on\nshipping schedules and customs clearance.\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\nK-Eye 4K unit price at 5,000 units 7,950\nWarranty 1 year, return to base\n6. Data and Firmware\nThe companion app stores clips on a cloud service hosted outside India. Encryption\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 14,
+          "criterion_name": "Pricing & Warranty",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Lowest unit price; 1-year return-to-base warranty.",
+          "evidence": "K-Eye 4K unit price at 5,000 units",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Pricing and Warranty",
+            "start": 1087,
+            "end": 1121,
+            "context_before": "\u2026 Operating\ntemperature is -10 to 60 degrees Celsius.\n4. Supply and Lead Time\nUnits are shipped by sea from our contract manufacturer. Expected lead time is 12 to 16 weeks, depending on\nshipping schedules and customs clearance.\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\n",
+            "match_text": "K-Eye 4K unit price at 5,000 units",
+            "context_after": " 7,950\nWarranty 1 year, return to base\n6. Data and Firmware\nThe companion app stores clips on a cloud service hosted outside India. Encryption of stored video is not\nsupported. Firmware updates are released by the manufacturer from time to time.\nFictional proposal created for a classroom\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 15,
+          "criterion_name": "Data Privacy & Firmware Support",
+          "score": 4.0,
+          "max_score": 10,
+          "justification": "Cloud storage outside India and no encryption of stored video.",
+          "evidence": "Encryption of stored video is not supported.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Data and Firmware",
+            "start": 1253,
+            "end": 1296,
+            "context_before": "\u2026 weeks, depending on\nshipping schedules and customs clearance.\n5. Pricing and Warranty\nItem Amount (INR, excl. GST)\nK-Eye 4K unit price at 5,000 units 7,950\nWarranty 1 year, return to base\n6. Data and Firmware\nThe companion app stores clips on a cloud service hosted outside India. ",
+            "match_text": "Encryption of stored video is not\nsupported",
+            "context_after": ". Firmware updates are released by the manufacturer from time to time.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.4,
+          "weighted_points": 6.0,
+          "benchmark_score": 9.0,
+          "gap": -5.0,
+          "relative_pct": 44.4444,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Data stored outside India without encryption",
+        "BIS certification missing"
+      ],
+      "overall_summary": "Cheapest option with significant compliance and privacy gaps.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 1,
+        "chars": 1440,
+        "file_type": "pdf",
+        "sha256": "7591c72eb2f3690ef17ef8ab3c28b46b19e3884ef79664b6a2686c503d930322",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Kestrel Auto Imaging\", \"criteria\": [{\"criterion_id\": 11, \"score\": 8.0, \"max_score\": 10, \"justification\": \"4K front with wide 150\\u00b0 view, but no 4G connectivity.\", \"evidence\": \"Lane departure warning; no 4G connectivity in the standard model.\"}, {\"criterion_id\": 12, \"score\": 6.0, \"max_score\": 10, \"justification\": \"CE and FCC only; BIS certification not yet applied for.\", \"evidence\": \"BIS certification will be applied for after the order is confirmed.\"}, {\"criterion_id\": 13, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Imported by sea with an uncertain 12 to 16 week lead time.\", \"evidence\": \"Expected lead time is 12 to 16 weeks\"}, {\"criterion_id\": 14, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Lowest unit price; 1-year return-to-base warranty.\", \"evidence\": \"K-Eye 4K unit price at 5,000 units\"}, {\"criterion_id\": 15, \"score\": 4.0, \"max_score\": 10, \"justification\": \"Cloud storage outside India and no encryption of stored video.\", \"evidence\": \"Encryption of stored video is not supported.\"}], \"risks\": [\"Data stored outside India without encryption\", \"BIS certification missing\"], \"overall_summary\": \"Cheapest option with significant compliance and privacy gaps.\"}"
+      }
+    }
+  ],
+  "excluded_suppliers": [],
+  "warnings": [],
+  "agent_log": [
+    {
+      "at": "13:53:30",
+      "step": "create_batch",
+      "level": "info",
+      "message": "Batch RFP-20261028-135330-523714 created with 4 supplier(s) by evaluator."
+    },
+    {
+      "at": "13:53:30",
+      "step": "load_criteria",
+      "level": "info",
+      "message": "5 active criteria loaded for Automotive \u2013 Car Dashcam Manufacturers."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "VisionDrive Electronics: 1 pages, 2,021 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "RoadEye Technologies: Word (.docx), 1,484 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Kestrel Auto Imaging: 1 pages, 1,440 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Zento Mobility: Word (.docx), 1,503 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "VisionDrive Electronics: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "RoadEye Technologies: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Kestrel Auto Imaging: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Zento Mobility: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "VisionDrive Electronics: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "RoadEye Technologies: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Kestrel Auto Imaging: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Zento Mobility: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "score_absolute",
+      "level": "info",
+      "message": "Absolute weighted scores calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "benchmark_peers",
+      "level": "info",
+      "message": "Benchmarks, gaps, relative % and PPI calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "rank_suppliers",
+      "level": "info",
+      "message": "4 suppliers ranked; tie-break rules used 0 time(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "persist_results",
+      "level": "info",
+      "message": "Run saved with status 'completed'."
+    }
+  ]
+}

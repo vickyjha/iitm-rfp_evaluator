@@ -1,0 +1,194 @@
+{
+  "categories": {
+    "TECH_AI_GOV": {
+      "folder": "ai_governance",
+      "rfp_title": "Enterprise AI Governance and Model Risk Platform",
+      "rfp_reference": "MFS-RFP-2026-031",
+      "buyer": "Meridian Financial Services (MFS)",
+      "category_note": "",
+      "suppliers": [
+        {
+          "file": "ai_governance/clearmind_assurance.pdf",
+          "supplier_name": "ClearMind Assurance",
+          "submission_date": "2026-10-15",
+          "experience_rating": 82,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "ai_governance/lumora_ai.docx",
+          "supplier_name": "Lumora AI",
+          "submission_date": "2026-10-13",
+          "experience_rating": 64,
+          "format": "docx",
+          "demo_role": "core"
+        },
+        {
+          "file": "ai_governance/trustgrid_systems.pdf",
+          "supplier_name": "TrustGrid Systems",
+          "submission_date": "2026-10-16",
+          "experience_rating": 70,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "ai_governance/kavach_labs.doc",
+          "supplier_name": "Kavach Labs",
+          "submission_date": "2026-10-12",
+          "experience_rating": 30,
+          "format": "doc",
+          "demo_role": "core"
+        }
+      ]
+    },
+    "OFFICE_STATIONERY": {
+      "folder": "stationery",
+      "rfp_title": "Annual Rate Contract for Stationery and Office Consumables (6 offices)",
+      "rfp_reference": "HLL-RFP-2026-022",
+      "buyer": "Harbourline Logistics Pvt Ltd",
+      "category_note": "",
+      "suppliers": [
+        {
+          "file": "stationery/inkwell_office_supplies.docx",
+          "supplier_name": "Inkwell Office Supplies",
+          "submission_date": "2026-10-20",
+          "experience_rating": 75,
+          "format": "docx",
+          "demo_role": "core"
+        },
+        {
+          "file": "stationery/papertrail_traders.pdf",
+          "supplier_name": "PaperTrail Traders",
+          "submission_date": "2026-10-18",
+          "experience_rating": 60,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "stationery/officenest_india.pdf",
+          "supplier_name": "OfficeNest India",
+          "submission_date": "2026-10-18",
+          "experience_rating": 80,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "stationery/shree_ganesh_stationers.doc",
+          "supplier_name": "Shree Ganesh Stationers",
+          "submission_date": "2026-10-19",
+          "experience_rating": 45,
+          "format": "doc",
+          "demo_role": "core"
+        }
+      ]
+    },
+    "AUTO_DASHCAM": {
+      "folder": "dashcam",
+      "rfp_title": "Supply of 5,000 dual-channel dashcams for the commercial fleet",
+      "rfp_reference": "VFS-RFP-2026-008",
+      "buyer": "Velocity Fleet Services Ltd",
+      "category_note": "",
+      "suppliers": [
+        {
+          "file": "dashcam/visiondrive_electronics.pdf",
+          "supplier_name": "VisionDrive Electronics",
+          "submission_date": "2026-10-21",
+          "experience_rating": 85,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "dashcam/roadeye_technologies.docx",
+          "supplier_name": "RoadEye Technologies",
+          "submission_date": "2026-10-19",
+          "experience_rating": 70,
+          "format": "docx",
+          "demo_role": "core"
+        },
+        {
+          "file": "dashcam/kestrel_auto_imaging.pdf",
+          "supplier_name": "Kestrel Auto Imaging",
+          "submission_date": "2026-10-22",
+          "experience_rating": 50,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "dashcam/zento_mobility.docx",
+          "supplier_name": "Zento Mobility",
+          "submission_date": "2026-10-20",
+          "experience_rating": 65,
+          "format": "docx",
+          "demo_role": "core"
+        }
+      ]
+    },
+    "OTHERS": {
+      "folder": "others",
+      "rfp_title": "Omnichannel Customer Support Platform",
+      "rfp_reference": "MRG-RFP-2026-014",
+      "buyer": "Meridian Retail Group (MRG)",
+      "category_note": "IT services - Omnichannel customer support platform",
+      "suppliers": [
+        {
+          "file": "others/apex_systems.pdf",
+          "supplier_name": "Apex Systems",
+          "submission_date": "2026-10-10",
+          "experience_rating": 78,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "others/brightpath_tech.pdf",
+          "supplier_name": "BrightPath Tech",
+          "submission_date": "2026-10-08",
+          "experience_rating": 35,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "others/nexaworks.pdf",
+          "supplier_name": "NexaWorks",
+          "submission_date": "2026-10-12",
+          "experience_rating": 72,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "others/orbit_digital.pdf",
+          "supplier_name": "Orbit Digital",
+          "submission_date": "2026-10-09",
+          "experience_rating": 90,
+          "format": "pdf",
+          "demo_role": "core"
+        },
+        {
+          "file": "others/quasar_solutions.pdf",
+          "supplier_name": "Quasar Solutions",
+          "submission_date": "2026-10-14",
+          "experience_rating": 50,
+          "format": "pdf",
+          "demo_role": "validation case: incomplete proposal"
+        }
+      ]
+    }
+  },
+  "error_cases": [
+    {
+      "file": "error_cases/scanned_proposal.pdf",
+      "supplier_name": "Zenith Infotech",
+      "submission_date": "2026-10-11",
+      "experience_rating": 60,
+      "format": "pdf",
+      "demo_role": "error case: image-only PDF with no extractable text"
+    },
+    {
+      "file": "error_cases/renamed_word_file.pdf",
+      "supplier_name": "Mislabelled Supplier",
+      "submission_date": "2026-10-11",
+      "experience_rating": 50,
+      "format": "pdf",
+      "demo_role": "input validation: Word file renamed to .pdf"
+    }
+  ]
+}

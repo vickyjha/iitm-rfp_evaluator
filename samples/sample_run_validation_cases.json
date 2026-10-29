@@ -1,0 +1,1214 @@
+{
+  "rfp_run_id": "RFP-20261028-135330-5BB3D7",
+  "rfp_title": "Omnichannel Customer Support Platform",
+  "rfp_reference": "MRG-RFP-2026-014",
+  "category": {
+    "category_id": 4,
+    "code": "OTHERS",
+    "label": "Others",
+    "note": "IT services - Omnichannel customer support platform"
+  },
+  "created_at": "2026-10-28T13:53:30+00:00",
+  "completed_at": "2026-10-28T13:53:30+00:00",
+  "status": "completed_with_warnings",
+  "created_by": "evaluator",
+  "llm": {
+    "mode": "mock",
+    "model": "mock-evaluator",
+    "prompt_version": "v2.0",
+    "temperature": 0
+  },
+  "disclaimer": "Mock mode: scores were produced by the offline simulator for demonstration, not by an AI model. Do not use them for real decisions.",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 16,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability and overall technical fit to the requirement.",
+      "weight": 30.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 17,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing, governance and implementation risk plan.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 18,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost of ownership, payment terms and stated assumptions.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 19,
+      "name": "Security & Compliance",
+      "description": "Security controls, certifications, data privacy, auditability and regulatory compliance.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 20,
+      "name": "Support & Experience",
+      "description": "Support model and SLAs, similar past projects and verifiable client references.",
+      "weight": 10.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_weighted_score": "sum over criteria of (score / max_score) x weight",
+    "criterion_benchmark": "highest validated score for the criterion across all ranked suppliers",
+    "criterion_gap": "supplier score - benchmark score (0 for the benchmark leader, otherwise negative)",
+    "relative_performance_pct": "(supplier score / benchmark score) x 100; 100 when the benchmark is 0",
+    "peer_performance_index": "sum(relative_pct x weight) / sum(weights)",
+    "rounding": "absolute score and PPI rounded to 4 decimals before sorting"
+  },
+  "tie_break_order": [
+    "1) Higher Peer Performance Index (PPI) first",
+    "2) Earlier submission date",
+    "3) Higher historical experience rating",
+    "4) Supplier name in ascending (A-Z) order"
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "NexaWorks",
+      "absolute_score": 79.0,
+      "ppi": 85.1111,
+      "submission_date": "2026-10-26",
+      "experience_rating": 72.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "Apex Systems",
+      "absolute_score": 76.0,
+      "ppi": 81.4444,
+      "submission_date": "2026-10-24",
+      "experience_rating": 78.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Orbit Digital",
+      "absolute_score": 60.0,
+      "ppi": 64.6667,
+      "submission_date": "2026-10-23",
+      "experience_rating": 90.0
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "BrightPath Tech",
+      "absolute_score": 54.0,
+      "ppi": 56.6667,
+      "submission_date": "2026-10-22",
+      "experience_rating": 35.0
+    },
+    {
+      "final_rank": 5,
+      "supplier_name": "Quasar Solutions",
+      "absolute_score": 17.0,
+      "ppi": 17.8889,
+      "submission_date": "2026-10-28",
+      "experience_rating": 50.0
+    }
+  ],
+  "benchmarks": [
+    {
+      "criterion_id": 16,
+      "criterion_name": "Technical Capability",
+      "weight": 30.0,
+      "max_score": 10,
+      "benchmark_score": 10.0,
+      "leaders": [
+        "BrightPath Tech"
+      ]
+    },
+    {
+      "criterion_id": 17,
+      "criterion_name": "Implementation Plan",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "NexaWorks"
+      ]
+    },
+    {
+      "criterion_id": 18,
+      "criterion_name": "Commercial Value",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "BrightPath Tech"
+      ]
+    },
+    {
+      "criterion_id": 19,
+      "criterion_name": "Security & Compliance",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Apex Systems"
+      ]
+    },
+    {
+      "criterion_id": 20,
+      "criterion_name": "Support & Experience",
+      "weight": 10.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "NexaWorks"
+      ]
+    }
+  ],
+  "tie_break_explanations": [
+    {
+      "higher": "NexaWorks",
+      "lower": "Apex Systems",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "NexaWorks ranks above Apex Systems: higher PPI (85.1111 vs 81.4444)."
+    },
+    {
+      "higher": "Apex Systems",
+      "lower": "Orbit Digital",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "Apex Systems ranks above Orbit Digital: higher PPI (81.4444 vs 64.6667)."
+    },
+    {
+      "higher": "Orbit Digital",
+      "lower": "BrightPath Tech",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "Orbit Digital ranks above BrightPath Tech: higher PPI (64.6667 vs 56.6667)."
+    },
+    {
+      "higher": "BrightPath Tech",
+      "lower": "Quasar Solutions",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "BrightPath Tech ranks above Quasar Solutions: higher PPI (56.6667 vs 17.8889)."
+    }
+  ],
+  "suppliers": [
+    {
+      "final_rank": 1,
+      "supplier_name": "NexaWorks",
+      "file_name": "nexaworks.pdf",
+      "submission_date": "2026-10-26",
+      "experience_rating": 72.0,
+      "absolute_score": 79.0,
+      "ppi": 85.1111,
+      "criteria": [
+        {
+          "criterion_id": 16,
+          "criterion_name": "Technical Capability",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Native SAP, Shopify and Genesys connectors, India-hosted with geo-redundant backup; 99.9% SLA slightly below Apex.",
+          "evidence": "Native connectors for Shopify Plus and SAP S/4HANA (via SAP Integration Suite), plus Genesys Cloud CTI.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Proposed Solution",
+            "start": 1031,
+            "end": 1133,
+            "context_before": "\u2026 cost and delivery certainty. Its distinguishing features are a phased, low-risk\nrollout plan and a support model that stays engaged long after go-live.\n2. Proposed Solution\n\u2022 NexaService Cloud hosted in Microsoft Azure Central India with geo-redundant backup in Azure South India.\n\u2022 ",
+            "match_text": "Native connectors for Shopify Plus and SAP S/4HANA (via SAP Integration Suite), plus Genesys Cloud CTI",
+            "context_after": ".\n\u2022 WhatsApp Business Platform, web chat and email channels with unified routing and SLA timers.\n\u2022 Knowledge base, agent assist and supervisor real-time dashboards.\n\u2022 Documented REST APIs; availability SLA of 99.9% per month.\n3. Implementation Plan\nWe deliver in five phases over 20\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.8,
+          "weighted_points": 24.0,
+          "benchmark_score": 10.0,
+          "gap": -2.0,
+          "relative_pct": 80.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 17,
+          "criterion_name": "Implementation Plan",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Most complete plan: stage gates, pilot, named dedicated team, RAID log and specific risk mitigations in 20 weeks.",
+          "evidence": "We deliver in five phases over 20 weeks with formal stage gates.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Implementation Plan",
+            "start": 1382,
+            "end": 1445,
+            "context_before": "\u2026 Suite), plus Genesys Cloud CTI.\n\u2022 WhatsApp Business Platform, web chat and email channels with unified routing and SLA timers.\n\u2022 Knowledge base, agent assist and supervisor real-time dashboards.\n\u2022 Documented REST APIs; availability SLA of 99.9% per month.\n3. Implementation Plan\n",
+            "match_text": "We deliver in five phases over 20 weeks with formal stage gates",
+            "context_after": ". A pilot with one centre de-risks the full rollout,\nand each phase has entry and exit criteria agreed with MRG.\nPhase Weeks Deliverables and exit criteria\n0. Mobilise 1-2 Project charter, RACI, governance calendar, risk register baseline\n1. Discover & design 3-6 Process maps, solution\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 18,
+          "criterion_name": "Commercial Value",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Mid-range fixed-price offer with locked licence pricing and migration included.",
+          "evidence": "Total three-year cost 4,48,60,000",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "4. Commercial Proposal",
+            "start": 3168,
+            "end": 3201,
+            "context_before": "\u2026 classroom exercise. Confidential. Page 1\n\n\nItem Basis Amount (INR, excl. GST)\nImplementation (fixed price) One-time 85,00,000\nNexaService Cloud, 350 agents INR 2,600 per agent per month 3,27,60,000\nCustomer success and enhanced support INR 12,00,000 per year x 3 36,00,000\n",
+            "match_text": "Total three-year cost 4,48,60,000",
+            "context_after": "\nAssumptions: licence price locked for 3 years with a maximum 5% uplift at renewal; migration of up to 1.5 million\nhistorical tickets included; change requests above 10 person-days are quoted separately.\n5. Security, Compliance and Risk Controls\nNexaWorks is ISO/IEC 27001:2022 certified\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 19,
+          "criterion_name": "Security & Compliance",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "ISO 27001 certified and SOC 2 Type I, with Type II still in progress.",
+          "evidence": "NexaWorks is ISO/IEC 27001:2022 certified and has completed a SOC 2 Type I assessment",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "5. Security, Compliance and Risk Controls",
+            "start": 3447,
+            "end": 3532,
+            "context_before": "\u2026\nTotal three-year cost 4,48,60,000\nAssumptions: licence price locked for 3 years with a maximum 5% uplift at renewal; migration of up to 1.5 million\nhistorical tickets included; change requests above 10 person-days are quoted separately.\n5. Security, Compliance and Risk Controls\n",
+            "match_text": "NexaWorks is ISO/IEC 27001:2022 certified and has completed a SOC 2 Type I assessment",
+            "context_after": "; the Type II audit\nwindow closes in March 2027. Data is encrypted at rest (AES-256) and in transit (TLS 1.2+). Single sign-on with\nAzure AD, role-based access, audit trails, and a DPDP-aligned data retention and deletion process are provided.\nAn external penetration test is performed\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 20,
+          "criterion_name": "Support & Experience",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "24x7 with 15-minute P1 response, TAM, CSM and service credits; strong references at similar scale.",
+          "evidence": "24x7x365 service desk with P1 response in 15 minutes and resolution target of 4 hours",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "6. Support Model, Experience and References",
+            "start": 3887,
+            "end": 3972,
+            "context_before": "\u2026 (AES-256) and in transit (TLS 1.2+). Single sign-on with\nAzure AD, role-based access, audit trails, and a DPDP-aligned data retention and deletion process are provided.\nAn external penetration test is performed annually.\n6. Support Model, Experience and References\nSupport model: ",
+            "match_text": "24x7x365 service desk with P1 response in 15 minutes and resolution target of 4 hours",
+            "context_after": "; P2\nresponse 1 hour; P3 response 4 hours. MRG gets a dedicated Technical Account Manager, a Customer Success\nManager running quarterly business reviews, and an in-region L3 engineering team. Service credits apply if SLAs\nare missed.\nExperience: 11 contact-centre platform programmes\u2026"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.9,
+          "weighted_points": 9.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "SOC 2 Type II not yet complete"
+      ],
+      "overall_summary": "Balanced proposal with the strongest implementation plan and support model.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 2,
+        "chars": 4620,
+        "file_type": "pdf",
+        "sha256": "8e137383e5283131f591bd67c8ddbdbb56d9f40c9822c17d48f9043cbaa361f6",
+        "removed_boilerplate_lines": 2,
+        "truncated": false
+      },
+      "llm": {
+        "source": "cache",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"NexaWorks\", \"criteria\": [{\"criterion_id\": 16, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Native SAP, Shopify and Genesys connectors, India-hosted with geo-redundant backup; 99.9% SLA slightly below Apex.\", \"evidence\": \"Native connectors for Shopify Plus and SAP S/4HANA (via SAP Integration Suite), plus Genesys Cloud CTI.\"}, {\"criterion_id\": 17, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Most complete plan: stage gates, pilot, named dedicated team, RAID log and specific risk mitigations in 20 weeks.\", \"evidence\": \"We deliver in five phases over 20 weeks with formal stage gates.\"}, {\"criterion_id\": 18, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Mid-range fixed-price offer with locked licence pricing and migration included.\", \"evidence\": \"Total three-year cost 4,48,60,000\"}, {\"criterion_id\": 19, \"score\": 7.0, \"max_score\": 10, \"justification\": \"ISO 27001 certified and SOC 2 Type I, with Type II still in progress.\", \"evidence\": \"NexaWorks is ISO/IEC 27001:2022 certified and has completed a SOC 2 Type I assessment\"}, {\"criterion_id\": 20, \"score\": 9.0, \"max_score\": 10, \"justification\": \"24x7 with 15-minute P1 response, TAM, CSM and service credits; strong references at similar scale.\", \"evidence\": \"24x7x365 service desk with P1 response in 15 minutes and resolution target of 4 hours\"}], \"risks\": [\"SOC 2 Type II not yet complete\"], \"overall_summary\": \"Balanced proposal with the strongest implementation plan and support model.\"}"
+      }
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "Apex Systems",
+      "file_name": "apex_systems.pdf",
+      "submission_date": "2026-10-24",
+      "experience_rating": 78.0,
+      "absolute_score": 76.0,
+      "ppi": 81.4444,
+      "criteria": [
+        {
+          "criterion_id": 16,
+          "criterion_name": "Technical Capability",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Cloud-native microservices with DR, certified SAP and Shopify connectors, Genesys CTI and documented load testing.",
+          "evidence": "Load tested to 5,000 concurrent agent sessions and 1,200 messages per second; target availability SLA of 99.95% per month.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Proposed Solution and Architecture",
+            "start": 1867,
+            "end": 1943,
+            "context_before": "\u2026 integration for voice: screen-pop, click-to-dial and call recordings linked to tickets.\n\u2022 WhatsApp Business Platform integration through Meta's Cloud API with template management.\n\u2022 Open REST and GraphQL APIs with an API gateway, rate limiting and versioning for future integrations.\n\u2022 ",
+            "match_text": "Load tested to 5,000 concurrent agent sessions and 1,200 messages per second",
+            "context_after": "; target availability SLA of\n99.95% per month.\n\u2022 AI-assisted routing, suggested replies and knowledge-base recommendations (can be switched off per queue).\nData residency: all customer personal data, attachments, backups and logs are stored in India. No personal data\nleaves Indian\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.9,
+          "weighted_points": 27.0,
+          "benchmark_score": 10.0,
+          "gap": -1.0,
+          "relative_pct": 90.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 17,
+          "criterion_name": "Implementation Plan",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Clear four-phase plan with milestones and a pilot, but a longer 24-week timeline and a less detailed risk plan.",
+          "evidence": "Total duration is 24 weeks from contract signature to go-live, followed by 4 weeks of hypercare.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Implementation Approach, Timeline and Team",
+            "start": 2447,
+            "end": 2542,
+            "context_before": "\u2026 logs are stored in India. No personal data\nleaves Indian regions, including for AI features, which use models hosted in ap-south-1.\n3. Implementation Approach, Timeline and Team\nWe follow a four-phase delivery approach with a fixed scope baseline agreed at the end of Discovery. ",
+            "match_text": "Total\nduration is 24 weeks from contract signature to go-live, followed by 4 weeks of hypercare",
+            "context_after": ".\nPhase Weeks Key milestones\nDiscovery & design 1-4 Solution design sign-off; integration specifications\nBuild & integrate 5-14 SAP and Shopify connectors live in test; channel set-up\nTest & migrate 15-20 SIT, performance test, UAT sign-off; ticket history migration\nRollout 21-24\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 18,
+          "criterion_name": "Commercial Value",
+          "score": 5.0,
+          "max_score": 10,
+          "justification": "Pricing is transparent and fixed, but at INR 6.18 crore it is the most expensive option.",
+          "evidence": "Total three-year cost of ownership 6,17,60,000",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "4. Commercial Proposal",
+            "start": 3573,
+            "end": 3619,
+            "context_before": "\u2026 a classroom exercise. Confidential. Page 1\n\n\nItem Basis Amount (INR)\nImplementation services (fixed price) One-time 1,10,00,000\nApexDesk subscription, 350 agent licences INR 3,600 per agent per month 4,53,60,000\nPremium support and 24x7 operations Per year x 3 54,00,000\n",
+            "match_text": "Total three-year cost of ownership 6,17,60,000",
+            "context_after": "\nAssumptions: MRG provides SAP and Shopify sandbox access by week 3; up to 2 million historical tickets are\nmigrated; licence price is fixed for three years; payment milestones are 20% at signature, 40% at UAT sign-off\nand 40% at go-live for the implementation fee.\n5. Security, Compliance\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.5,
+          "weighted_points": 10.0,
+          "benchmark_score": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 19,
+          "criterion_name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "ISO 27001/27701, SOC 2 Type II, customer-managed keys, immutable audit logs and DPDP features.",
+          "evidence": "ISO/IEC 27001:2022 and ISO/IEC 27701 certified; SOC 2 Type II report",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "5. Security, Compliance and Risk Controls",
+            "start": 3945,
+            "end": 3991,
+            "context_before": "\u2026 sandbox access by week 3; up to 2 million historical tickets are\nmigrated; licence price is fixed for three years; payment milestones are 20% at signature, 40% at UAT sign-off\nand 40% at go-live for the implementation fee.\n5. Security, Compliance and Risk Controls\n\u2022 Certifications: ",
+            "match_text": "ISO/IEC 27001:2022 and ISO/IEC 27701 certified",
+            "context_after": "; SOC 2 Type II report (latest period ending\nJune 2026) available under NDA.\n\u2022 Encryption: AES-256 at rest with customer-managed keys in AWS KMS; TLS 1.3 in transit.\n\u2022 Identity: SAML 2.0 / OIDC single sign-on with MRG's Azure AD, role-based access control, MFA enforced.\n\u2022 Audit: immutable\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 20,
+          "criterion_name": "Support & Experience",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "24x7 support with 30-minute P1 response; six similar implementations but only one named reference with details.",
+          "evidence": "P1 incidents receive a 30-minute response; P2 within 2 hours",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "6. Support Model, Experience and References",
+            "start": 4819,
+            "end": 4860,
+            "context_before": "\u2026 principal requests (access, correction, erasure) and configurable\nretention policies are built in.\n\u2022 Business continuity: RPO 15 minutes, RTO 4 hours, with twice-yearly DR drills.\n6. Support Model, Experience and References\nSupport is provided 24x7 by our Bengaluru operations centre. ",
+            "match_text": "P1 incidents receive a 30-minute response",
+            "context_after": "; P2\nwithin 2 hours; P3 next business day. A named service manager provides monthly service reviews.\nRelevant experience: six omnichannel contact-centre implementations in the last four years, including two for\nretailers with more than 200 agents.\n\u2022 Northstar Fashion (retail, 280\u2026"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.7,
+          "weighted_points": 7.0,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Highest total cost of the field",
+        "24-week timeline leaves less buffer before peak season"
+      ],
+      "overall_summary": "Technically the strongest and most secure proposal, at a premium price.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 2,
+        "chars": 5347,
+        "file_type": "pdf",
+        "sha256": "30ddff31bfe1a001ecf9b7ee2a63ac2d6a6403ca2a141a049e743592c3f7a812",
+        "removed_boilerplate_lines": 2,
+        "truncated": false
+      },
+      "llm": {
+        "source": "cache",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Apex Systems\", \"criteria\": [{\"criterion_id\": 16, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Cloud-native microservices with DR, certified SAP and Shopify connectors, Genesys CTI and documented load testing.\", \"evidence\": \"Load tested to 5,000 concurrent agent sessions and 1,200 messages per second; target availability SLA of 99.95% per month.\"}, {\"criterion_id\": 17, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Clear four-phase plan with milestones and a pilot, but a longer 24-week timeline and a less detailed risk plan.\", \"evidence\": \"Total duration is 24 weeks from contract signature to go-live, followed by 4 weeks of hypercare.\"}, {\"criterion_id\": 18, \"score\": 5.0, \"max_score\": 10, \"justification\": \"Pricing is transparent and fixed, but at INR 6.18 crore it is the most expensive option.\", \"evidence\": \"Total three-year cost of ownership 6,17,60,000\"}, {\"criterion_id\": 19, \"score\": 9.0, \"max_score\": 10, \"justification\": \"ISO 27001/27701, SOC 2 Type II, customer-managed keys, immutable audit logs and DPDP features.\", \"evidence\": \"ISO/IEC 27001:2022 and ISO/IEC 27701 certified; SOC 2 Type II report\"}, {\"criterion_id\": 20, \"score\": 7.0, \"max_score\": 10, \"justification\": \"24x7 support with 30-minute P1 response; six similar implementations but only one named reference with details.\", \"evidence\": \"P1 incidents receive a 30-minute response; P2 within 2 hours\"}], \"risks\": [\"Highest total cost of the field\", \"24-week timeline leaves less buffer before peak season\"], \"overall_summary\": \"Technically the strongest and most secure proposal, at a premium price.\"}"
+      }
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Orbit Digital",
+      "file_name": "orbit_digital.pdf",
+      "submission_date": "2026-10-23",
+      "experience_rating": 90.0,
+      "absolute_score": 60.0,
+      "ppi": 64.6667,
+      "criteria": [
+        {
+          "criterion_id": 16,
+          "criterion_name": "Technical Capability",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Capable platform, but integrations with ERP, e-commerce and telephony are not designed yet.",
+          "evidence": "Integrations with MRG's ERP, e-commerce platform and telephony will be analysed and scoped during the discovery phase",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Proposed Solution",
+            "start": 1031,
+            "end": 1148,
+            "context_before": "\u2026 email, chat, social and WhatsApp channels in one agent desktop, with workflow automation,\nknowledge management and reporting. Voice is supported through our telephony partners.\nIntegration approach: OrbitCX has an integration framework that can connect to most enterprise systems.\n",
+            "match_text": "Integrations with MRG's ERP, e-commerce platform and telephony will be analysed and scoped during the\ndiscovery phase",
+            "context_after": ", and the detailed design will be finalised then. We expect to reuse patterns from previous retail\nprojects where possible.\nHosting will be on a cloud platform in India selected together with MRG.\n3. Implementation Approach and Timeline\nOrbit uses its proven OrbitPath methodology.\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.6,
+          "weighted_points": 18.0,
+          "benchmark_score": 10.0,
+          "gap": -4.0,
+          "relative_pct": 60.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 17,
+          "criterion_name": "Implementation Plan",
+          "score": 5.0,
+          "max_score": 10,
+          "justification": "Indicative 26-week timeline with ranges, no named team and staffing deferred until after discovery.",
+          "evidence": "The indicative timeline is approximately 26 weeks, subject to confirmation after discovery",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Implementation Approach and Timeline",
+            "start": 1430,
+            "end": 1520,
+            "context_before": "\u2026 and the detailed design will be finalised then. We expect to reuse patterns from previous retail\nprojects where possible.\nHosting will be on a cloud platform in India selected together with MRG.\n3. Implementation Approach and Timeline\nOrbit uses its proven OrbitPath methodology. ",
+            "match_text": "The indicative timeline is approximately 26 weeks, subject to\nconfirmation after discovery",
+            "context_after": ":\nStage Indicative duration\nDiscovery and integration scoping 6-8 weeks\nConfiguration and integration build 10-12 weeks\nTesting and training 4 weeks\nGo-live and stabilisation 2-4 weeks\nTeam: an engagement manager, a delivery lead and a pool of consultants and developers allocated\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.5,
+          "weighted_points": 10.0,
+          "benchmark_score": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 18,
+          "criterion_name": "Commercial Value",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Medium licence price, but implementation is time-and-materials and will be re-baselined.",
+          "evidence": "implementation is estimated on a time-and-materials basis and will be re-baselined after discovery",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Commercial Proposal",
+            "start": 2181,
+            "end": 2279,
+            "context_before": "\u2026 (INR, excl. GST)\nDiscovery phase Fixed 15,00,000\nImplementation (estimate) Time and materials 75,00,000\nOrbitCX licences, 350 agents INR 2,400 per agent per month 3,02,40,000\nAnnual support INR 10,00,000 per year x 3 30,00,000\nEstimated three-year total 4,22,40,000\nAssumptions: ",
+            "match_text": "implementation is estimated on a time-and-materials basis and will be re-baselined after discovery",
+            "context_after": "\nonce integrations are scoped; telephony partner licences are not included.\nFictional proposal created for a classroom exercise. Confidential. Page 1\n\n\n5. Security and Compliance\nOrbit Digital holds ISO/IEC 27001 certification. OrbitCX supports single sign-on, role-based access\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 19,
+          "criterion_name": "Security & Compliance",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "ISO 27001 certified with SSO and encryption, but few specifics on audit, testing or DPDP controls.",
+          "evidence": "Orbit Digital holds ISO/IEC 27001 certification.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "5. Security and Compliance",
+            "start": 2466,
+            "end": 2513,
+            "context_before": "\u2026 implementation is estimated on a time-and-materials basis and will be re-baselined after discovery\nonce integrations are scoped; telephony partner licences are not included.\nFictional proposal created for a classroom exercise. Confidential. Page 1\n\n\n5. Security and Compliance\n",
+            "match_text": "Orbit Digital holds ISO/IEC 27001 certification",
+            "context_after": ". OrbitCX supports single sign-on, role-based access and data\nencryption. We comply with applicable Indian data protection laws, including the DPDP Act, and will complete\nMRG's security assessment during contracting.\n6. Support, Experience and References\nSupport: 24x7 for P1 incidents\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 20,
+          "criterion_name": "Support & Experience",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Deepest retail experience with four named references; non-P1 support is business hours only.",
+          "evidence": "15 years in customer experience, 22 retail contact-centre implementations",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "6. Support, Experience and References",
+            "start": 2922,
+            "end": 2995,
+            "context_before": "\u2026 including the DPDP Act, and will complete\nMRG's security assessment during contracting.\n6. Support, Experience and References\nSupport: 24x7 for P1 incidents (1-hour response) and business-hours support for other priorities, delivered from\nour Gurugram service centre.\nExperience: ",
+            "match_text": "15 years in customer experience, 22 retail contact-centre implementations",
+            "context_after": ", and 3,000+ agents\ncurrently supported on OrbitCX. Client references (contacts available on request):\n\u2022 Shree Hypermarkets (retail, 600 agents) - OrbitCX since 2019, renewed twice.\n\u2022 Lotus Apparel Group (retail, 320 agents) - multi-country rollout, 2022.\n\u2022 GreenLeaf Pharmacy Chain\u2026"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.8,
+          "weighted_points": 8.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Integration scope and cost uncertain until discovery",
+        "Time-and-materials implementation pricing"
+      ],
+      "overall_summary": "Most experienced supplier with strong references, but integration plan and costs are vague.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 2,
+        "chars": 3461,
+        "file_type": "pdf",
+        "sha256": "f7277afe39ebfb4e6aa0a8b264e57a27b651ab8087dc33b2f7757bd025fe3fa4",
+        "removed_boilerplate_lines": 2,
+        "truncated": false
+      },
+      "llm": {
+        "source": "cache",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Orbit Digital\", \"criteria\": [{\"criterion_id\": 16, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Capable platform, but integrations with ERP, e-commerce and telephony are not designed yet.\", \"evidence\": \"Integrations with MRG's ERP, e-commerce platform and telephony will be analysed and scoped during the discovery phase\"}, {\"criterion_id\": 17, \"score\": 5.0, \"max_score\": 10, \"justification\": \"Indicative 26-week timeline with ranges, no named team and staffing deferred until after discovery.\", \"evidence\": \"The indicative timeline is approximately 26 weeks, subject to confirmation after discovery\"}, {\"criterion_id\": 18, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Medium licence price, but implementation is time-and-materials and will be re-baselined.\", \"evidence\": \"implementation is estimated on a time-and-materials basis and will be re-baselined after discovery\"}, {\"criterion_id\": 19, \"score\": 6.0, \"max_score\": 10, \"justification\": \"ISO 27001 certified with SSO and encryption, but few specifics on audit, testing or DPDP controls.\", \"evidence\": \"Orbit Digital holds ISO/IEC 27001 certification.\"}, {\"criterion_id\": 20, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Deepest retail experience with four named references; non-P1 support is business hours only.\", \"evidence\": \"15 years in customer experience, 22 retail contact-centre implementations\"}], \"risks\": [\"Integration scope and cost uncertain until discovery\", \"Time-and-materials implementation pricing\"], \"overall_summary\": \"Most experienced supplier with strong references, but integration plan and costs are vague.\"}"
+      }
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "BrightPath Tech",
+      "file_name": "brightpath_tech.pdf",
+      "submission_date": "2026-10-22",
+      "experience_rating": 35.0,
+      "absolute_score": 54.0,
+      "ppi": 56.6667,
+      "criteria": [
+        {
+          "criterion_id": 16,
+          "criterion_name": "Technical Capability",
+          "score": 10.0,
+          "max_score": 10,
+          "justification": "Covers email, chat and WhatsApp, but SAP is a custom build, voice is only manual logging and hosting region is unconfirmed.",
+          "evidence": "Voice: agents can log calls manually; native telephony integration is on our 2027 roadmap.",
+          "validation_flags": [
+            "clipped"
+          ],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Proposed Solution",
+            "start": 1140,
+            "end": 1176,
+            "context_before": "\u2026 email, website chat widget and WhatsApp (via a third-party WhatsApp gateway partner).\n\u2022 Shopify app available in the Shopify App Store to show order details in the ticket sidebar.\n\u2022 SAP integration will be built as a custom connector during the project using SAP's standard APIs.\n\u2022 ",
+            "match_text": "Voice: agents can log calls manually",
+            "context_after": "; native telephony integration is on our 2027 roadmap.\n\u2022 Macros, canned responses, simple automation rules and dashboards.\nThe platform is hosted on a leading public cloud provider. Hosting region will be confirmed during onboarding.\nThe system scales automatically with demand.\n3.\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 1.0,
+          "weighted_points": 30.0,
+          "benchmark_score": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 17,
+          "criterion_name": "Implementation Plan",
+          "score": 0.0,
+          "max_score": 10,
+          "justification": "Fast 12-week plan, but a thin team, big-bang go-live and no ticket migration in scope.",
+          "evidence": "Migration of historical tickets is not included in this timeline.",
+          "validation_flags": [
+            "non_numeric_score"
+          ],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Implementation Approach and Timeline",
+            "start": 1897,
+            "end": 1961,
+            "context_before": "\u2026 set-up, Shopify app install, SAP connector build\n9-10 Testing and agent training (train-the-trainer)\n11-12 Go-live for all three centres together\nTeam: one project manager and two implementation consultants. Additional developers will be assigned for the\nSAP connector as needed. ",
+            "match_text": "Migration of historical tickets is not included in this timeline",
+            "context_after": ".\n4. Commercial Proposal\nBrightPath offers highly competitive pricing (INR, excluding GST, three-year term):\nItem Basis Amount (INR)\nOnboarding and configuration One-time 18,00,000\nBrightDesk Pro licences, 350 agents INR 1,750 per agent per month 2,20,50,000\nStandard support Included\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.0,
+          "weighted_points": 0.0,
+          "benchmark_score": 9.0,
+          "gap": -9.0,
+          "relative_pct": 0.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 18,
+          "criterion_name": "Commercial Value",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Lowest three-year cost with clear per-agent pricing; some open-ended extras for SAP effort and WhatsApp charges.",
+          "evidence": "",
+          "validation_flags": [
+            "missing_evidence"
+          ],
+          "evidence_found_in_document": null,
+          "evidence_location": null,
+          "weight": 20.0,
+          "normalised_score": 0.9,
+          "weighted_points": 18.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 19,
+          "criterion_name": "Security & Compliance",
+          "score": 3.0,
+          "max_score": 10,
+          "justification": "No ISO 27001 or SOC 2; generic statements only and DPDP review deferred.",
+          "evidence": "We are currently working towards ISO 27001 certification and expect to begin the audit process next year.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 2,
+            "section": "5. Security and Compliance",
+            "start": 2773,
+            "end": 2877,
+            "context_before": "\u2026\nFictional proposal created for a classroom exercise. Confidential. Page 1\n\n\n5. Security and Compliance\nSecurity is important to BrightPath. We follow industry best practices, including encrypted connections (HTTPS)\nand password-protected user accounts. Data is backed up daily.\n",
+            "match_text": "We are currently working towards ISO 27001 certification and expect to begin the audit process next year",
+            "context_after": ". A SOC\n2 report is not available at this time. We will cooperate with MRG's security questionnaire. DPDP Act\nrequirements will be reviewed with MRG's legal team during onboarding.\n6. Support and Experience\nSupport is available by email and chat from 9:00 to 19:00 IST, Monday to Saturday.\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.3,
+          "weighted_points": 6.0,
+          "benchmark_score": 9.0,
+          "gap": -6.0,
+          "relative_pct": 33.3333,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 20,
+          "criterion_name": "Support & Experience",
+          "score": 0.0,
+          "max_score": 10,
+          "justification": "No result was returned for this criterion; scored 0 by validation rule.",
+          "evidence": "",
+          "validation_flags": [
+            "imputed_missing"
+          ],
+          "evidence_found_in_document": null,
+          "evidence_location": null,
+          "weight": 10.0,
+          "normalised_score": 0.0,
+          "weighted_points": 0.0,
+          "benchmark_score": 9.0,
+          "gap": -9.0,
+          "relative_pct": 0.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "No security certification",
+        "Limited experience at MRG's scale",
+        "No native voice integration"
+      ],
+      "overall_summary": "Cheapest and fastest option, but weak on compliance, voice and scale experience.",
+      "validation_warnings": [
+        "LLM reported supplier name 'BrightPath Tech Pvt Ltd'; using the entered name 'BrightPath Tech'.",
+        "'Technical Capability': score 150 outside 0-10; clipped to 10.",
+        "'Implementation Plan': score 'excellent' is not numeric; set to 0.",
+        "'Commercial Value': evidence missing.",
+        "Unknown criterion_id 999 in LLM output; ignored.",
+        "'Support & Experience': no result returned by the LLM; scored 0."
+      ],
+      "document": {
+        "pages": 2,
+        "chars": 3495,
+        "file_type": "pdf",
+        "sha256": "07375de28b40ef9afba5406bc4c13990c527fff7f41b6e63ec6bd3959aea7655",
+        "removed_boilerplate_lines": 2,
+        "truncated": false
+      },
+      "llm": {
+        "source": "cache",
+        "model": "mock-evaluator",
+        "fault_injected": true,
+        "raw_response": "Here is the evaluation:\n```json\n{\"supplier_name\": \"BrightPath Tech Pvt Ltd\", \"criteria\": [{\"criterion_id\": 16, \"score\": 150, \"max_score\": 10, \"justification\": \"Covers email, chat and WhatsApp, but SAP is a custom build, voice is only manual logging and hosting region is unconfirmed.\", \"evidence\": \"Voice: agents can log calls manually; native telephony integration is on our 2027 roadmap.\"}, {\"criterion_id\": 17, \"score\": \"excellent\", \"max_score\": 10, \"justification\": \"Fast 12-week plan, but a thin team, big-bang go-live and no ticket migration in scope.\", \"evidence\": \"Migration of historical tickets is not included in this timeline.\"}, {\"criterion_id\": 18, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Lowest three-year cost with clear per-agent pricing; some open-ended extras for SAP effort and WhatsApp charges.\", \"evidence\": \"\"}, {\"criterion_id\": 19, \"score\": 3.0, \"max_score\": 10, \"justification\": \"No ISO 27001 or SOC 2; generic statements only and DPDP review deferred.\", \"evidence\": \"We are currently working towards ISO 27001 certification and expect to begin the audit process next year.\"}, {\"criterion_id\": 999, \"score\": 7, \"justification\": \"hallucinated criterion\"}], \"risks\": [\"No security certification\", \"Limited experience at MRG's scale\", \"No native voice integration\"], \"overall_summary\": \"Cheapest and fastest option, but weak on compliance, voice and scale experience.\"}\n```"
+      }
+    },
+    {
+      "final_rank": 5,
+      "supplier_name": "Quasar Solutions",
+      "file_name": "quasar_solutions.pdf",
+      "submission_date": "2026-10-28",
+      "experience_rating": 50.0,
+      "absolute_score": 17.0,
+      "ppi": 17.8889,
+      "criteria": [
+        {
+          "criterion_id": 16,
+          "criterion_name": "Technical Capability",
+          "score": 3.0,
+          "max_score": 10,
+          "justification": "Only email and web chat initially; SAP and Shopify deferred to later phases.",
+          "evidence": "Other channels and integrations with SAP and Shopify can be added in later phases.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Solution and Approach",
+            "start": 531,
+            "end": 612,
+            "context_before": "\u2026 Solutions is interested in supporting Meridian Retail Group with a new customer support platform. We\npropose to configure a leading open-source help desk platform for MRG's needs.\n2. Solution and Approach\nWe will install and configure the help desk with email and web chat channels. ",
+            "match_text": "Other channels and integrations\nwith SAP and Shopify can be added in later phases",
+            "context_after": ". We estimate an initial rollout in around 16 weeks with a team\nof four consultants.\n3. Experience\nQuasar has delivered help desk set-ups for several mid-sized companies in manufacturing and education.\nReferences will be shared at a later stage.\nNote: pricing, security details and\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.3,
+          "weighted_points": 9.0,
+          "benchmark_score": 10.0,
+          "gap": -7.0,
+          "relative_pct": 30.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 17,
+          "criterion_name": "Implementation Plan",
+          "score": 3.0,
+          "max_score": 10,
+          "justification": "Only a rough 16-week estimate and a team of four; no milestones or risk plan.",
+          "evidence": "We estimate an initial rollout in around 16 weeks with a team of four consultants.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Solution and Approach",
+            "start": 614,
+            "end": 695,
+            "context_before": "\u2026 support platform. We\npropose to configure a leading open-source help desk platform for MRG's needs.\n2. Solution and Approach\nWe will install and configure the help desk with email and web chat channels. Other channels and integrations\nwith SAP and Shopify can be added in later phases. ",
+            "match_text": "We estimate an initial rollout in around 16 weeks with a team\nof four consultants",
+            "context_after": ".\n3. Experience\nQuasar has delivered help desk set-ups for several mid-sized companies in manufacturing and education.\nReferences will be shared at a later stage.\nNote: pricing, security details and the support model will be submitted separately.\nFictional proposal created for a classroom\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.3,
+          "weighted_points": 6.0,
+          "benchmark_score": 9.0,
+          "gap": -6.0,
+          "relative_pct": 33.3333,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 18,
+          "criterion_name": "Commercial Value",
+          "score": 0.0,
+          "max_score": 10,
+          "justification": "No result was returned for this criterion; scored 0 by validation rule.",
+          "evidence": "",
+          "validation_flags": [
+            "imputed_missing"
+          ],
+          "evidence_found_in_document": null,
+          "evidence_location": null,
+          "weight": 20.0,
+          "normalised_score": 0.0,
+          "weighted_points": 0.0,
+          "benchmark_score": 9.0,
+          "gap": -9.0,
+          "relative_pct": 0.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 19,
+          "criterion_name": "Security & Compliance",
+          "score": 0.0,
+          "max_score": 10,
+          "justification": "No result was returned for this criterion; scored 0 by validation rule.",
+          "evidence": "",
+          "validation_flags": [
+            "imputed_missing"
+          ],
+          "evidence_found_in_document": null,
+          "evidence_location": null,
+          "weight": 20.0,
+          "normalised_score": 0.0,
+          "weighted_points": 0.0,
+          "benchmark_score": 9.0,
+          "gap": -9.0,
+          "relative_pct": 0.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 20,
+          "criterion_name": "Support & Experience",
+          "score": 2.0,
+          "max_score": 10,
+          "justification": "No retail experience and no references provided.",
+          "evidence": "References will be shared at a later stage.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Experience",
+            "start": 814,
+            "end": 856,
+            "context_before": "\u2026 Other channels and integrations\nwith SAP and Shopify can be added in later phases. We estimate an initial rollout in around 16 weeks with a team\nof four consultants.\n3. Experience\nQuasar has delivered help desk set-ups for several mid-sized companies in manufacturing and education.\n",
+            "match_text": "References will be shared at a later stage",
+            "context_after": ".\nNote: pricing, security details and the support model will be submitted separately.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.2,
+          "weighted_points": 2.0,
+          "benchmark_score": 9.0,
+          "gap": -7.0,
+          "relative_pct": 22.2222,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Pricing, security and support model not submitted"
+      ],
+      "overall_summary": "Incomplete proposal; key sections are missing.",
+      "validation_warnings": [
+        "'Commercial Value': no result returned by the LLM; scored 0.",
+        "'Security & Compliance': no result returned by the LLM; scored 0."
+      ],
+      "document": {
+        "pages": 1,
+        "chars": 1015,
+        "file_type": "pdf",
+        "sha256": "13bd367b6136a03392aee2027c0d4566bab7a0c1473f6147c52422a157103fc3",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Quasar Solutions\", \"criteria\": [{\"criterion_id\": 16, \"score\": 3.0, \"max_score\": 10, \"justification\": \"Only email and web chat initially; SAP and Shopify deferred to later phases.\", \"evidence\": \"Other channels and integrations with SAP and Shopify can be added in later phases.\"}, {\"criterion_id\": 17, \"score\": 3.0, \"max_score\": 10, \"justification\": \"Only a rough 16-week estimate and a team of four; no milestones or risk plan.\", \"evidence\": \"We estimate an initial rollout in around 16 weeks with a team of four consultants.\"}, {\"criterion_id\": 20, \"score\": 2.0, \"max_score\": 10, \"justification\": \"No retail experience and no references provided.\", \"evidence\": \"References will be shared at a later stage.\"}], \"risks\": [\"Pricing, security and support model not submitted\"], \"overall_summary\": \"Incomplete proposal; key sections are missing.\"}"
+      }
+    }
+  ],
+  "excluded_suppliers": [
+    {
+      "supplier_name": "Zenith Infotech",
+      "reason": "scanned_proposal.pdf: no readable text found (0 characters). It may be a scanned image; run OCR or upload a text-based file.",
+      "file_name": "scanned_proposal.pdf",
+      "submission_date": "2026-10-25",
+      "experience_rating": 60.0
+    }
+  ],
+  "warnings": [
+    "Zenith Infotech: excluded from ranking. scanned_proposal.pdf: no readable text found (0 characters). It may be a scanned image; run OCR or upload a text-based file.",
+    "BrightPath Tech: LLM reported supplier name 'BrightPath Tech Pvt Ltd'; using the entered name 'BrightPath Tech'.",
+    "BrightPath Tech: 'Technical Capability': score 150 outside 0-10; clipped to 10.",
+    "BrightPath Tech: 'Implementation Plan': score 'excellent' is not numeric; set to 0.",
+    "BrightPath Tech: 'Commercial Value': evidence missing.",
+    "BrightPath Tech: Unknown criterion_id 999 in LLM output; ignored.",
+    "BrightPath Tech: 'Support & Experience': no result returned by the LLM; scored 0.",
+    "Quasar Solutions: 'Commercial Value': no result returned by the LLM; scored 0.",
+    "Quasar Solutions: 'Security & Compliance': no result returned by the LLM; scored 0."
+  ],
+  "agent_log": [
+    {
+      "at": "13:53:30",
+      "step": "create_batch",
+      "level": "info",
+      "message": "Batch RFP-20261028-135330-5BB3D7 created with 6 supplier(s) by evaluator."
+    },
+    {
+      "at": "13:53:30",
+      "step": "load_criteria",
+      "level": "info",
+      "message": "5 active criteria loaded for Others."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Apex Systems: 2 pages, 5,347 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "BrightPath Tech: 2 pages, 3,495 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "NexaWorks: 2 pages, 4,620 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Orbit Digital: 2 pages, 3,461 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Quasar Solutions: 1 pages, 1,015 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "error",
+      "message": "Zenith Infotech: scanned_proposal.pdf: no readable text found (0 characters). It may be a scanned image; run OCR or upload a text-based file."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Apex Systems: scored by mock-evaluator [cache] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "BrightPath Tech: scored by mock-evaluator [cache] in 0.0s (malformed output injected for demo)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "NexaWorks: scored by mock-evaluator [cache] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Orbit Digital: scored by mock-evaluator [cache] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Quasar Solutions: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Apex Systems: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "warning",
+      "message": "BrightPath Tech: 6 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "NexaWorks: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Orbit Digital: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "warning",
+      "message": "Quasar Solutions: 2 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "score_absolute",
+      "level": "info",
+      "message": "Absolute weighted scores calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "benchmark_peers",
+      "level": "info",
+      "message": "Benchmarks, gaps, relative % and PPI calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "rank_suppliers",
+      "level": "info",
+      "message": "5 suppliers ranked; tie-break rules used 0 time(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "persist_results",
+      "level": "info",
+      "message": "Run saved with status 'completed_with_warnings'."
+    }
+  ]
+}

@@ -1,0 +1,995 @@
+{
+  "rfp_run_id": "RFP-20261028-135330-31D152",
+  "rfp_title": "Annual Rate Contract for Stationery and Office Consumables (6 offices)",
+  "rfp_reference": "HLL-RFP-2026-022",
+  "category": {
+    "category_id": 2,
+    "code": "OFFICE_STATIONERY",
+    "label": "Office Supplies \u2013 Stationery",
+    "note": ""
+  },
+  "created_at": "2026-10-28T13:53:30+00:00",
+  "completed_at": "2026-10-28T13:53:30+00:00",
+  "status": "completed_with_warnings",
+  "created_by": "evaluator",
+  "llm": {
+    "mode": "mock",
+    "model": "mock-evaluator",
+    "prompt_version": "v2.0",
+    "temperature": 0
+  },
+  "disclaimer": "Mock mode: scores were produced by the offline simulator for demonstration, not by an AI model. Do not use them for real decisions.",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 6,
+      "name": "Pricing & Discounts",
+      "description": "Unit prices for the sample basket, volume discounts, price validity and escalation terms.",
+      "weight": 30.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 7,
+      "name": "Product Range & Quality",
+      "description": "Coverage of the item list, brands offered, quality standards, samples and substitution policy.",
+      "weight": 25.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 8,
+      "name": "Delivery & Logistics",
+      "description": "Delivery lead times, coverage of all office locations, minimum order values, ordering channels and fill rate.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 9,
+      "name": "Service & Account Management",
+      "description": "Dedicated account manager, returns and replacement process, invoicing and reporting.",
+      "weight": 15.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 10,
+      "name": "Sustainability",
+      "description": "Recycled/FSC products, eco-labels, packaging reduction and take-back programmes.",
+      "weight": 10.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_weighted_score": "sum over criteria of (score / max_score) x weight",
+    "criterion_benchmark": "highest validated score for the criterion across all ranked suppliers",
+    "criterion_gap": "supplier score - benchmark score (0 for the benchmark leader, otherwise negative)",
+    "relative_performance_pct": "(supplier score / benchmark score) x 100; 100 when the benchmark is 0",
+    "peer_performance_index": "sum(relative_pct x weight) / sum(weights)",
+    "rounding": "absolute score and PPI rounded to 4 decimals before sorting"
+  },
+  "tie_break_order": [
+    "1) Higher Peer Performance Index (PPI) first",
+    "2) Earlier submission date",
+    "3) Higher historical experience rating",
+    "4) Supplier name in ascending (A-Z) order"
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Inkwell Office Supplies",
+      "absolute_score": 83.0,
+      "ppi": 91.5,
+      "submission_date": "2026-10-28",
+      "experience_rating": 75.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "OfficeNest India",
+      "absolute_score": 78.5,
+      "ppi": 86.4444,
+      "submission_date": "2026-10-26",
+      "experience_rating": 80.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "PaperTrail Traders",
+      "absolute_score": 78.5,
+      "ppi": 86.4444,
+      "submission_date": "2026-10-26",
+      "experience_rating": 60.0
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Shree Ganesh Stationers",
+      "absolute_score": 69.0,
+      "ppi": 75.0,
+      "submission_date": "2026-10-27",
+      "experience_rating": 45.0
+    }
+  ],
+  "benchmarks": [
+    {
+      "criterion_id": 6,
+      "criterion_name": "Pricing & Discounts",
+      "weight": 30.0,
+      "max_score": 10,
+      "benchmark_score": 10.0,
+      "leaders": [
+        "Shree Ganesh Stationers"
+      ]
+    },
+    {
+      "criterion_id": 7,
+      "criterion_name": "Product Range & Quality",
+      "weight": 25.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Inkwell Office Supplies"
+      ]
+    },
+    {
+      "criterion_id": 8,
+      "criterion_name": "Delivery & Logistics",
+      "weight": 20.0,
+      "max_score": 10,
+      "benchmark_score": 8.0,
+      "leaders": [
+        "OfficeNest India",
+        "PaperTrail Traders"
+      ]
+    },
+    {
+      "criterion_id": 9,
+      "criterion_name": "Service & Account Management",
+      "weight": 15.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Inkwell Office Supplies"
+      ]
+    },
+    {
+      "criterion_id": 10,
+      "criterion_name": "Sustainability",
+      "weight": 10.0,
+      "max_score": 10,
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Inkwell Office Supplies"
+      ]
+    }
+  ],
+  "tie_break_explanations": [
+    {
+      "higher": "Inkwell Office Supplies",
+      "lower": "OfficeNest India",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "Inkwell Office Supplies ranks above OfficeNest India: higher PPI (91.5000 vs 86.4444)."
+    },
+    {
+      "higher": "OfficeNest India",
+      "lower": "PaperTrail Traders",
+      "deciding_rule": 3,
+      "tie_break_used": true,
+      "explanation": "OfficeNest India ranks above PaperTrail Traders: equal PPI and submission date; higher experience rating (80 vs 60)."
+    },
+    {
+      "higher": "PaperTrail Traders",
+      "lower": "Shree Ganesh Stationers",
+      "deciding_rule": 1,
+      "tie_break_used": false,
+      "explanation": "PaperTrail Traders ranks above Shree Ganesh Stationers: higher PPI (86.4444 vs 75.0000)."
+    }
+  ],
+  "suppliers": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Inkwell Office Supplies",
+      "file_name": "inkwell_office_supplies.docx",
+      "submission_date": "2026-10-28",
+      "experience_rating": 75.0,
+      "absolute_score": 83.0,
+      "ppi": 91.5,
+      "criteria": [
+        {
+          "criterion_id": 6,
+          "criterion_name": "Pricing & Discounts",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Competitive basket prices fixed for 12 months, with a 4% volume discount.",
+          "evidence": "A volume discount of 4% applies on quarterly spend above INR 10 lakh. Prices are fixed for 12 months.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Pricing (sample basket)",
+            "start": 1109,
+            "end": 1209,
+            "context_before": "\u2026 price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) | JK Copier / equivalent | 238\nBall pens, blue (box of 50) | Cello Pinpoint | 260\nBox files, laminated | Solo | 92\nWhiteboard markers (set of 4) | Camlin | 118\nToner cartridge, HP 88A compatible | Inkwell Select | 1,450\n",
+            "match_text": "A volume discount of 4% applies on quarterly spend above INR 10 lakh. Prices are fixed for 12 months",
+            "context_after": ".\n\n4. Delivery and Logistics\nOrders placed by 2 pm are delivered within 48 hours in metro locations and within 4 working days at the Nagpur and Vizag sites. Ordering is through our web portal or a punch-out catalogue. Our fill rate for the last 12 months was 97.5%.\n\n5. Service\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.8,
+          "weighted_points": 24.0,
+          "benchmark_score": 10.0,
+          "gap": -2.0,
+          "relative_pct": 80.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 7,
+          "criterion_name": "Product Range & Quality",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Covers all 214 items with two brand options and free samples; substitutions need written approval.",
+          "evidence": "We can supply all 214 items in the Harbourline item list",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Product Range and Quality",
+            "start": 502,
+            "end": 558,
+            "context_before": "\u2026 Consumables (6 offices) Submission date: 2026-10-20\n\n1. Company Overview\nInkwell Office Supplies has supplied stationery and office consumables to corporate customers since 2011. We operate four regional warehouses and serve 1,200 business customers.\n\n2. Product Range and Quality\n",
+            "match_text": "We can supply all 214 items in the Harbourline item list",
+            "context_after": ", with at least two brand options for each high-volume item. Free samples of the top 30 items will be provided within 7 days of request. Substitutions are made only with written approval from the Harbourline admin team.\n\n3. Pricing (sample basket)\nItem | Brand | Unit price (INR,\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.9,
+          "weighted_points": 22.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 8,
+          "criterion_name": "Delivery & Logistics",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "48-hour metro delivery, 4 working days at Nagpur and Vizag; 97.5% fill rate.",
+          "evidence": "Our fill rate for the last 12 months was 97.5%.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Delivery and Logistics",
+            "start": 1430,
+            "end": 1475,
+            "context_before": "\u2026 quarterly spend above INR 10 lakh. Prices are fixed for 12 months.\n\n4. Delivery and Logistics\nOrders placed by 2 pm are delivered within 48 hours in metro locations and within 4 working days at the Nagpur and Vizag sites. Ordering is through our web portal or a punch-out catalogue. ",
+            "match_text": "Our fill rate for the last 12 months was 97.5",
+            "context_after": "%.\n\n5. Service and Account Management\nA dedicated key account manager and a back-up coordinator are assigned to Harbourline. Damaged or incorrect items are replaced within 48 hours. Monthly consolidated invoicing with location-wise spend reports is included.\n\n6. Sustainability\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.7,
+          "weighted_points": 14.0,
+          "benchmark_score": 8.0,
+          "gap": -1.0,
+          "relative_pct": 87.5,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 9,
+          "criterion_name": "Service & Account Management",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Dedicated key account manager plus back-up, 48-hour replacements and location-wise reporting.",
+          "evidence": "A dedicated key account manager and a back-up coordinator are assigned to Harbourline.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "5. Service and Account Management",
+            "start": 1516,
+            "end": 1601,
+            "context_before": "\u2026 Logistics\nOrders placed by 2 pm are delivered within 48 hours in metro locations and within 4 working days at the Nagpur and Vizag sites. Ordering is through our web portal or a punch-out catalogue. Our fill rate for the last 12 months was 97.5%.\n\n5. Service and Account Management\n",
+            "match_text": "A dedicated key account manager and a back-up coordinator are assigned to Harbourline",
+            "context_after": ". Damaged or incorrect items are replaced within 48 hours. Monthly consolidated invoicing with location-wise spend reports is included.\n\n6. Sustainability\n- FSC-certified and 100% recycled paper options at the same price as standard paper.\n- Refillable markers and toner take-back\u2026"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.9,
+          "weighted_points": 13.5,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 10,
+          "criterion_name": "Sustainability",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "FSC and recycled paper at no premium, take-back programme and plastic-free packaging.",
+          "evidence": "FSC-certified and 100% recycled paper options at the same price as standard paper.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "6. Sustainability",
+            "start": 1761,
+            "end": 1842,
+            "context_before": "\u2026 5. Service and Account Management\nA dedicated key account manager and a back-up coordinator are assigned to Harbourline. Damaged or incorrect items are replaced within 48 hours. Monthly consolidated invoicing with location-wise spend reports is included.\n\n6. Sustainability\n- ",
+            "match_text": "FSC-certified and 100% recycled paper options at the same price as standard paper",
+            "context_after": ".\n- Refillable markers and toner take-back with recycling certificates.\n- Plastic-free packaging for all deliveries since 2025."
+          },
+          "weight": 10.0,
+          "normalised_score": 0.9,
+          "weighted_points": 9.0,
+          "benchmark_score": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Slower delivery to non-metro sites"
+      ],
+      "overall_summary": "Most complete offer across range, service and sustainability.",
+      "validation_warnings": [],
+      "document": {
+        "pages": null,
+        "chars": 1969,
+        "file_type": "docx",
+        "sha256": "0f0ff1e6ee26b09e0650261ad36545b8a340d6e887be4599ee26f4b110f635db",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Inkwell Office Supplies\", \"criteria\": [{\"criterion_id\": 6, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Competitive basket prices fixed for 12 months, with a 4% volume discount.\", \"evidence\": \"A volume discount of 4% applies on quarterly spend above INR 10 lakh. Prices are fixed for 12 months.\"}, {\"criterion_id\": 7, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Covers all 214 items with two brand options and free samples; substitutions need written approval.\", \"evidence\": \"We can supply all 214 items in the Harbourline item list\"}, {\"criterion_id\": 8, \"score\": 7.0, \"max_score\": 10, \"justification\": \"48-hour metro delivery, 4 working days at Nagpur and Vizag; 97.5% fill rate.\", \"evidence\": \"Our fill rate for the last 12 months was 97.5%.\"}, {\"criterion_id\": 9, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Dedicated key account manager plus back-up, 48-hour replacements and location-wise reporting.\", \"evidence\": \"A dedicated key account manager and a back-up coordinator are assigned to Harbourline.\"}, {\"criterion_id\": 10, \"score\": 9.0, \"max_score\": 10, \"justification\": \"FSC and recycled paper at no premium, take-back programme and plastic-free packaging.\", \"evidence\": \"FSC-certified and 100% recycled paper options at the same price as standard paper.\"}], \"risks\": [\"Slower delivery to non-metro sites\"], \"overall_summary\": \"Most complete offer across range, service and sustainability.\"}"
+      }
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "OfficeNest India",
+      "file_name": "officenest_india.pdf",
+      "submission_date": "2026-10-26",
+      "experience_rating": 80.0,
+      "absolute_score": 78.5,
+      "ppi": 86.4444,
+      "criteria": [
+        {
+          "criterion_id": 6,
+          "criterion_name": "Pricing & Discounts",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Prices fixed for 12 months with a 3% annual rebate.",
+          "evidence": "Prices are fixed for 12 months with a 3% rebate on annual spend above INR 40 lakh.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Pricing (sample basket)",
+            "start": 952,
+            "end": 1033,
+            "context_before": "\u2026 days. All paper\nproducts meet IS 1848 standards.\n3. Pricing (sample basket)\nItem Unit price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) 236\nBall pens, blue (box of 50) 250\nBox files, laminated 90\nWhiteboard markers (set of 4) 115\nToner cartridge, HP 88A compatible 1,420\n",
+            "match_text": "Prices are fixed for 12 months with a 3% rebate on annual spend above INR 40 lakh",
+            "context_after": ".\n4. Delivery and Logistics\nNext-business-day delivery to all six offices, including Nagpur and Vizag, from our network of fulfilment centres.\nNo minimum order value.\n5. Service and Account Management\nA named account manager, quarterly business reviews, an online ordering portal with\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.9,
+          "weighted_points": 27.0,
+          "benchmark_score": 10.0,
+          "gap": -1.0,
+          "relative_pct": 90.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 7,
+          "criterion_name": "Product Range & Quality",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "205 of 214 items from stock; remaining items within 5 days; paper meets IS 1848.",
+          "evidence": "We can supply 205 of the 214 listed items from stock",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Product Range and Quality",
+            "start": 578,
+            "end": 630,
+            "context_before": "\u2026 date: 2026-10-18\n1. Executive Summary\nOfficeNest India runs managed stationery programmes for multi-location companies. We propose a single rate\ncontract covering all six Harbourline offices, with one catalogue, one invoice and one point of contact.\n2. Product Range and Quality\n",
+            "match_text": "We can supply 205 of the 214 listed items from stock",
+            "context_after": "; the remaining 9 are available within 5 days. All paper\nproducts meet IS 1848 standards.\n3. Pricing (sample basket)\nItem Unit price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) 236\nBall pens, blue (box of 50) 250\nBox files, laminated 90\nWhiteboard markers (set of 4) 115\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.7,
+          "weighted_points": 17.5,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 8,
+          "criterion_name": "Delivery & Logistics",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Next-business-day delivery to all six offices with no minimum order value.",
+          "evidence": "Next-business-day delivery to all six offices, including Nagpur and Vizag",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Delivery and Logistics",
+            "start": 1061,
+            "end": 1134,
+            "context_before": "\u2026\nA4 copier paper 75 GSM (ream of 500) 236\nBall pens, blue (box of 50) 250\nBox files, laminated 90\nWhiteboard markers (set of 4) 115\nToner cartridge, HP 88A compatible 1,420\nPrices are fixed for 12 months with a 3% rebate on annual spend above INR 40 lakh.\n4. Delivery and Logistics\n",
+            "match_text": "Next-business-day delivery to all six offices, including Nagpur and Vizag",
+            "context_after": ", from our network of fulfilment centres.\nNo minimum order value.\n5. Service and Account Management\nA named account manager, quarterly business reviews, an online ordering portal with approval workflows and\nbudget limits per department, and monthly spend analytics.\n6. Sustainability\u2026"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 9,
+          "criterion_name": "Service & Account Management",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Named account manager, QBRs, approval workflows and spend analytics.",
+          "evidence": "A named account manager, quarterly business reviews, an online ordering portal",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Service and Account Management",
+            "start": 1234,
+            "end": 1312,
+            "context_before": "\u2026\nPrices are fixed for 12 months with a 3% rebate on annual spend above INR 40 lakh.\n4. Delivery and Logistics\nNext-business-day delivery to all six offices, including Nagpur and Vizag, from our network of fulfilment centres.\nNo minimum order value.\n5. Service and Account Management\n",
+            "match_text": "A named account manager, quarterly business reviews, an online ordering portal",
+            "context_after": " with approval workflows and\nbudget limits per department, and monthly spend analytics.\n6. Sustainability\nA green catalogue with 60 eco-labelled products is available. Packaging uses recycled cartons.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.8,
+          "weighted_points": 12.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 10,
+          "criterion_name": "Sustainability",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Green catalogue of 60 products; limited programme beyond that.",
+          "evidence": "A green catalogue with 60 eco-labelled products is available.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Sustainability",
+            "start": 1418,
+            "end": 1478,
+            "context_before": "\u2026 from our network of fulfilment centres.\nNo minimum order value.\n5. Service and Account Management\nA named account manager, quarterly business reviews, an online ordering portal with approval workflows and\nbudget limits per department, and monthly spend analytics.\n6. Sustainability\n",
+            "match_text": "A green catalogue with 60 eco-labelled products is available",
+            "context_after": ". Packaging uses recycled cartons.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.6,
+          "weighted_points": 6.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Smaller in-stock range than the leader"
+      ],
+      "overall_summary": "Strong managed-programme offer with excellent delivery coverage.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 1,
+        "chars": 1586,
+        "file_type": "pdf",
+        "sha256": "e0a58fe4ee38196aca15983ea22a39a4cc098e0b428cf5bab4c0cbda527afd0e",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"OfficeNest India\", \"criteria\": [{\"criterion_id\": 6, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Prices fixed for 12 months with a 3% annual rebate.\", \"evidence\": \"Prices are fixed for 12 months with a 3% rebate on annual spend above INR 40 lakh.\"}, {\"criterion_id\": 7, \"score\": 7.0, \"max_score\": 10, \"justification\": \"205 of 214 items from stock; remaining items within 5 days; paper meets IS 1848.\", \"evidence\": \"We can supply 205 of the 214 listed items from stock\"}, {\"criterion_id\": 8, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Next-business-day delivery to all six offices with no minimum order value.\", \"evidence\": \"Next-business-day delivery to all six offices, including Nagpur and Vizag\"}, {\"criterion_id\": 9, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Named account manager, QBRs, approval workflows and spend analytics.\", \"evidence\": \"A named account manager, quarterly business reviews, an online ordering portal\"}, {\"criterion_id\": 10, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Green catalogue of 60 products; limited programme beyond that.\", \"evidence\": \"A green catalogue with 60 eco-labelled products is available.\"}], \"risks\": [\"Smaller in-stock range than the leader\"], \"overall_summary\": \"Strong managed-programme offer with excellent delivery coverage.\"}"
+      }
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "PaperTrail Traders",
+      "file_name": "papertrail_traders.pdf",
+      "submission_date": "2026-10-26",
+      "experience_rating": 60.0,
+      "absolute_score": 78.5,
+      "ppi": 86.4444,
+      "criteria": [
+        {
+          "criterion_id": 6,
+          "criterion_name": "Pricing & Discounts",
+          "score": 9.0,
+          "max_score": 10,
+          "justification": "Low basket prices, but valid for only 6 months and open to revision.",
+          "evidence": "Prices are valid for 6 months and may be revised with 30 days' notice.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "3. Pricing (sample basket)",
+            "start": 868,
+            "end": 937,
+            "context_before": "\u2026 will be sourced on request with a 7-day lead time.\n3. Pricing (sample basket)\nItem Unit price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) 232\nBall pens, blue (box of 50) 245\nBox files, laminated 88\nWhiteboard markers (set of 4) 112\nToner cartridge, HP 88A compatible 1,390\n",
+            "match_text": "Prices are valid for 6 months and may be revised with 30 days' notice",
+            "context_after": ". A 2% discount applies on monthly orders\nabove INR 3 lakh.\n4. Delivery\nDelivery within 24 to 48 hours in Mumbai and Hyderabad; 3 to 5 working days elsewhere. Minimum order value is\nINR 5,000 per location.\n5. Service\nOrders can be placed by email or WhatsApp with our sales desk. Returns\u2026"
+          },
+          "weight": 30.0,
+          "normalised_score": 0.9,
+          "weighted_points": 27.0,
+          "benchmark_score": 10.0,
+          "gap": -1.0,
+          "relative_pct": 90.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 7,
+          "criterion_name": "Product Range & Quality",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Covers 196 of 214 items; specialist items sourced on request.",
+          "evidence": "We can supply 196 of the 214 items in the item list.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "2. Product Range",
+            "start": 460,
+            "end": 511,
+            "context_before": "\u2026 HLL-RFP-2026-022: Annual Rate Contract for Stationery and\nOffice Consumables (6 offices)\nSubmission date: 2026-10-18\n1. Introduction\nPaperTrail Traders is a wholesale distributor of stationery and office consumables serving offices in Maharashtra,\nTelangana and Andhra Pradesh.\n2. Product Range\n",
+            "match_text": "We can supply 196 of the 214 items in the item list",
+            "context_after": ". Specialist items such as archival boxes and certain printer\nconsumables will be sourced on request with a 7-day lead time.\n3. Pricing (sample basket)\nItem Unit price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) 232\nBall pens, blue (box of 50) 245\nBox files, laminated 88\u2026"
+          },
+          "weight": 25.0,
+          "normalised_score": 0.8,
+          "weighted_points": 20.0,
+          "benchmark_score": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 8,
+          "criterion_name": "Delivery & Logistics",
+          "score": 8.0,
+          "max_score": 10,
+          "justification": "Fast in Mumbai and Hyderabad, slower elsewhere, with a minimum order value per location.",
+          "evidence": "Minimum order value is INR 5,000 per location.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "4. Delivery",
+            "start": 1096,
+            "end": 1141,
+            "context_before": "\u2026 of 4) 112\nToner cartridge, HP 88A compatible 1,390\nPrices are valid for 6 months and may be revised with 30 days' notice. A 2% discount applies on monthly orders\nabove INR 3 lakh.\n4. Delivery\nDelivery within 24 to 48 hours in Mumbai and Hyderabad; 3 to 5 working days elsewhere. ",
+            "match_text": "Minimum order value is\nINR 5,000 per location",
+            "context_after": ".\n5. Service\nOrders can be placed by email or WhatsApp with our sales desk. Returns are accepted within 7 days.\n6. Sustainability\nRecycled paper is available on request at a 6% premium.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 20.0,
+          "normalised_score": 0.8,
+          "weighted_points": 16.0,
+          "benchmark_score": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 9,
+          "criterion_name": "Service & Account Management",
+          "score": 7.0,
+          "max_score": 10,
+          "justification": "Ordering by email or WhatsApp; no named account manager or reporting.",
+          "evidence": "Orders can be placed by email or WhatsApp with our sales desk.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "5. Service",
+            "start": 1154,
+            "end": 1215,
+            "context_before": "\u2026 are valid for 6 months and may be revised with 30 days' notice. A 2% discount applies on monthly orders\nabove INR 3 lakh.\n4. Delivery\nDelivery within 24 to 48 hours in Mumbai and Hyderabad; 3 to 5 working days elsewhere. Minimum order value is\nINR 5,000 per location.\n5. Service\n",
+            "match_text": "Orders can be placed by email or WhatsApp with our sales desk",
+            "context_after": ". Returns are accepted within 7 days.\n6. Sustainability\nRecycled paper is available on request at a 6% premium.\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 15.0,
+          "normalised_score": 0.7,
+          "weighted_points": 10.5,
+          "benchmark_score": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 10,
+          "criterion_name": "Sustainability",
+          "score": 5.0,
+          "max_score": 10,
+          "justification": "Recycled paper only on request at a premium.",
+          "evidence": "Recycled paper is available on request at a 6% premium.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": 1,
+            "section": "6. Sustainability",
+            "start": 1271,
+            "end": 1325,
+            "context_before": "\u2026 lakh.\n4. Delivery\nDelivery within 24 to 48 hours in Mumbai and Hyderabad; 3 to 5 working days elsewhere. Minimum order value is\nINR 5,000 per location.\n5. Service\nOrders can be placed by email or WhatsApp with our sales desk. Returns are accepted within 7 days.\n6. Sustainability\n",
+            "match_text": "Recycled paper is available on request at a 6% premium",
+            "context_after": ".\nFictional proposal created for a classroom exercise. Confidential. Page 1"
+          },
+          "weight": 10.0,
+          "normalised_score": 0.5,
+          "weighted_points": 5.0,
+          "benchmark_score": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Short price validity",
+        "Limited sustainability options"
+      ],
+      "overall_summary": "Good prices and delivery, weaker service and sustainability.",
+      "validation_warnings": [],
+      "document": {
+        "pages": 1,
+        "chars": 1400,
+        "file_type": "pdf",
+        "sha256": "5a2584cb0b3a1ce6f7c9ef7948be38e7a1667f6f865157f4c2bd5da4e24312c7",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"PaperTrail Traders\", \"criteria\": [{\"criterion_id\": 6, \"score\": 9.0, \"max_score\": 10, \"justification\": \"Low basket prices, but valid for only 6 months and open to revision.\", \"evidence\": \"Prices are valid for 6 months and may be revised with 30 days' notice.\"}, {\"criterion_id\": 7, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Covers 196 of 214 items; specialist items sourced on request.\", \"evidence\": \"We can supply 196 of the 214 items in the item list.\"}, {\"criterion_id\": 8, \"score\": 8.0, \"max_score\": 10, \"justification\": \"Fast in Mumbai and Hyderabad, slower elsewhere, with a minimum order value per location.\", \"evidence\": \"Minimum order value is INR 5,000 per location.\"}, {\"criterion_id\": 9, \"score\": 7.0, \"max_score\": 10, \"justification\": \"Ordering by email or WhatsApp; no named account manager or reporting.\", \"evidence\": \"Orders can be placed by email or WhatsApp with our sales desk.\"}, {\"criterion_id\": 10, \"score\": 5.0, \"max_score\": 10, \"justification\": \"Recycled paper only on request at a premium.\", \"evidence\": \"Recycled paper is available on request at a 6% premium.\"}], \"risks\": [\"Short price validity\", \"Limited sustainability options\"], \"overall_summary\": \"Good prices and delivery, weaker service and sustainability.\"}"
+      }
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "Shree Ganesh Stationers",
+      "file_name": "shree_ganesh_stationers.doc",
+      "submission_date": "2026-10-27",
+      "experience_rating": 45.0,
+      "absolute_score": 69.0,
+      "ppi": 75.0,
+      "criteria": [
+        {
+          "criterion_id": 6,
+          "criterion_name": "Pricing & Discounts",
+          "score": 10.0,
+          "max_score": 10,
+          "justification": "Lowest prices in the field, but valid for only 90 days.",
+          "evidence": "These are our lowest prices, valid for 90 days.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "2. Prices (sample basket)",
+            "start": 609,
+            "end": 655,
+            "context_before": "\u2026 offices in western India since 1998.\n2. Prices (sample basket)\nItem | Unit price (INR, excl. GST)\nA4 copier paper 75 GSM (ream of 500) | 219\nBall pens, blue (box of 50) | 228\nBox files, laminated | 80\nWhiteboard markers (set of 4) | 104\nToner cartridge, HP 88A compatible | 1,310\n\n",
+            "match_text": "These are our lowest prices, valid for 90 days",
+            "context_after": ".\n3. Range and Delivery\nWe stock most common office items; brands may vary depending on availability. Deliveries to Pune and Mumbai within 3 days; other cities through courier within 6 to 8 days.\n4. Service\nOrders are taken by phone. Payment within 15 days of invoice."
+          },
+          "weight": 30.0,
+          "normalised_score": 1.0,
+          "weighted_points": 30.0,
+          "benchmark_score": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 7,
+          "criterion_name": "Product Range & Quality",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Stocks common items only and brands may vary.",
+          "evidence": "brands may vary depending on availability",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Range and Delivery",
+            "start": 714,
+            "end": 755,
+            "context_before": "\u2026 copier paper 75 GSM (ream of 500) | 219\nBall pens, blue (box of 50) | 228\nBox files, laminated | 80\nWhiteboard markers (set of 4) | 104\nToner cartridge, HP 88A compatible | 1,310\n\nThese are our lowest prices, valid for 90 days.\n3. Range and Delivery\nWe stock most common office items; ",
+            "match_text": "brands may vary depending on availability",
+            "context_after": ". Deliveries to Pune and Mumbai within 3 days; other cities through courier within 6 to 8 days.\n4. Service\nOrders are taken by phone. Payment within 15 days of invoice."
+          },
+          "weight": 25.0,
+          "normalised_score": 0.6,
+          "weighted_points": 15.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 8,
+          "criterion_name": "Delivery & Logistics",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "3 days to Pune and Mumbai, 6 to 8 days by courier elsewhere.",
+          "evidence": "other cities through courier within 6 to 8 days",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "3. Range and Delivery",
+            "start": 802,
+            "end": 849,
+            "context_before": "\u2026 laminated | 80\nWhiteboard markers (set of 4) | 104\nToner cartridge, HP 88A compatible | 1,310\n\nThese are our lowest prices, valid for 90 days.\n3. Range and Delivery\nWe stock most common office items; brands may vary depending on availability. Deliveries to Pune and Mumbai within 3 days; ",
+            "match_text": "other cities through courier within 6 to 8 days",
+            "context_after": ".\n4. Service\nOrders are taken by phone. Payment within 15 days of invoice."
+          },
+          "weight": 20.0,
+          "normalised_score": 0.6,
+          "weighted_points": 12.0,
+          "benchmark_score": 8.0,
+          "gap": -2.0,
+          "relative_pct": 75.0,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 9,
+          "criterion_name": "Service & Account Management",
+          "score": 6.0,
+          "max_score": 10,
+          "justification": "Phone ordering only; no account management or reporting.",
+          "evidence": "Orders are taken by phone.",
+          "validation_flags": [],
+          "evidence_found_in_document": true,
+          "evidence_location": {
+            "found": true,
+            "match_ratio": 1.0,
+            "page": null,
+            "section": "4. Service",
+            "start": 862,
+            "end": 887,
+            "context_before": "\u2026 HP 88A compatible | 1,310\n\nThese are our lowest prices, valid for 90 days.\n3. Range and Delivery\nWe stock most common office items; brands may vary depending on availability. Deliveries to Pune and Mumbai within 3 days; other cities through courier within 6 to 8 days.\n4. Service\n",
+            "match_text": "Orders are taken by phone",
+            "context_after": ". Payment within 15 days of invoice."
+          },
+          "weight": 15.0,
+          "normalised_score": 0.6,
+          "weighted_points": 9.0,
+          "benchmark_score": 9.0,
+          "gap": -3.0,
+          "relative_pct": 66.6667,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        },
+        {
+          "criterion_id": 10,
+          "criterion_name": "Sustainability",
+          "score": 3.0,
+          "max_score": 10,
+          "justification": "No sustainability information provided.",
+          "evidence": "",
+          "validation_flags": [
+            "missing_evidence"
+          ],
+          "evidence_found_in_document": null,
+          "evidence_location": null,
+          "weight": 10.0,
+          "normalised_score": 0.3,
+          "weighted_points": 3.0,
+          "benchmark_score": 9.0,
+          "gap": -6.0,
+          "relative_pct": 33.3333,
+          "is_benchmark_leader": false,
+          "benchmark_note": ""
+        }
+      ],
+      "risks": [
+        "Slow delivery outside Maharashtra",
+        "No sustainability commitments"
+      ],
+      "overall_summary": "Cheapest supplier, but weak on range, service and delivery coverage.",
+      "validation_warnings": [
+        "'Sustainability': evidence missing."
+      ],
+      "document": {
+        "pages": null,
+        "chars": 923,
+        "file_type": "doc",
+        "sha256": "ab73d21ae42870cd3ba120b7c3de497bca7a1bb45134923bb65f97023c28fd99",
+        "removed_boilerplate_lines": 0,
+        "truncated": false
+      },
+      "llm": {
+        "source": "mock",
+        "model": "mock-evaluator",
+        "fault_injected": false,
+        "raw_response": "{\"supplier_name\": \"Shree Ganesh Stationers\", \"criteria\": [{\"criterion_id\": 6, \"score\": 10.0, \"max_score\": 10, \"justification\": \"Lowest prices in the field, but valid for only 90 days.\", \"evidence\": \"These are our lowest prices, valid for 90 days.\"}, {\"criterion_id\": 7, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Stocks common items only and brands may vary.\", \"evidence\": \"brands may vary depending on availability\"}, {\"criterion_id\": 8, \"score\": 6.0, \"max_score\": 10, \"justification\": \"3 days to Pune and Mumbai, 6 to 8 days by courier elsewhere.\", \"evidence\": \"other cities through courier within 6 to 8 days\"}, {\"criterion_id\": 9, \"score\": 6.0, \"max_score\": 10, \"justification\": \"Phone ordering only; no account management or reporting.\", \"evidence\": \"Orders are taken by phone.\"}, {\"criterion_id\": 10, \"score\": 3.0, \"max_score\": 10, \"justification\": \"No sustainability information provided.\", \"evidence\": \"\"}], \"risks\": [\"Slow delivery outside Maharashtra\", \"No sustainability commitments\"], \"overall_summary\": \"Cheapest supplier, but weak on range, service and delivery coverage.\"}"
+      }
+    }
+  ],
+  "excluded_suppliers": [],
+  "warnings": [
+    "Shree Ganesh Stationers: 'Sustainability': evidence missing."
+  ],
+  "agent_log": [
+    {
+      "at": "13:53:30",
+      "step": "create_batch",
+      "level": "info",
+      "message": "Batch RFP-20261028-135330-31D152 created with 4 supplier(s) by evaluator."
+    },
+    {
+      "at": "13:53:30",
+      "step": "load_criteria",
+      "level": "info",
+      "message": "5 active criteria loaded for Office Supplies \u2013 Stationery."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Inkwell Office Supplies: Word (.docx), 1,969 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "PaperTrail Traders: 1 pages, 1,400 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "OfficeNest India: 1 pages, 1,586 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "extract_documents",
+      "level": "info",
+      "message": "Shree Ganesh Stationers: Word 97-2003 (.doc), 923 characters extracted."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Inkwell Office Supplies: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "PaperTrail Traders: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "OfficeNest India: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "evaluate_suppliers",
+      "level": "info",
+      "message": "Shree Ganesh Stationers: scored by mock-evaluator [mock] in 0.0s."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "Inkwell Office Supplies: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "PaperTrail Traders: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "info",
+      "message": "OfficeNest India: 0 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "validate_scorecards",
+      "level": "warning",
+      "message": "Shree Ganesh Stationers: 1 validation warning(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "score_absolute",
+      "level": "info",
+      "message": "Absolute weighted scores calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "benchmark_peers",
+      "level": "info",
+      "message": "Benchmarks, gaps, relative % and PPI calculated."
+    },
+    {
+      "at": "13:53:30",
+      "step": "rank_suppliers",
+      "level": "info",
+      "message": "4 suppliers ranked; tie-break rules used 1 time(s)."
+    },
+    {
+      "at": "13:53:30",
+      "step": "persist_results",
+      "level": "info",
+      "message": "Run saved with status 'completed_with_warnings'."
+    }
+  ]
+}
